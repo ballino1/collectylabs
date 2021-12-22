@@ -44,7 +44,7 @@
 
 <body>
   
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <a id="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg></a>
     <defs>
         <filter id="gooey">
             <!-- in="sourceGraphic" -->
@@ -96,8 +96,8 @@
   <div class="container" >
     <div class="row">
       <div class="col-lg-12 text-center zindex-1">
-        <h1 style="font-size: 130px; margin-top: -150px; margin-bottom: 150px;" class="heading-style">Collecty</h1>
-        <svg viewbox="0 0 100 20" style="position: absolute; margin: -250px 0px 0px -190px;">
+        <h1 data-aos="fade-up"  style="font-size: 130px; margin-top: -150px; margin-bottom: 150px;" class="heading-style">Collecty</h1>
+        <svg viewbox="0 0 100 20" style="position: absolute; margin: -250px 0px 0px -300px;">
             <defs>
               <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="100%" stop-color="#4FFEC5"/>
@@ -116,20 +116,32 @@
                 </path>
               </pattern>
             </defs>
-            <text text-anchor="middle" x="50" y="14" font-size="12" fill="#fff"  fill-opacity="1">Labs</text>
-            <text text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)" fill-opacity="1">Labs</text>
+            <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="#fff"  fill-opacity="1">Labs</text>
+            <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)" fill-opacity="1">Labs</text>
             </svg>
         </div>
         
           
       <div class="wrapper">
     
-      <div class="col-md-6 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one" style="margin-top: 150px;"><img src="images/smallimg/twitter-xxl.png" height="30" width="30" /></a> </div>
-      <div class="col-md-6 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one" style="margin-top: 150px;"><img src="images/smallimg/discord.png" height="30" width="30" /></a> </div>
+      <div data-aos="fade-up" class="col-md-6 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one" style="margin-top: 150px;"><img src="images/smallimg/twitter-xxl.png" height="30" width="30" /></a> </div>
+      <div data-aos="fade-up" class="col-md-6 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one" style="margin-top: 150px;"><img src="images/smallimg/discord.png" height="30" width="30" /></a> </div>
       
     </div>
+
+  
     
-    
+
+</div>
+      <a class="nav-link page-scroll" href="#feature" >
+
+        <div class='scrolldown' style="--color: black; margin: 0 auto; margin-top: 150px;">
+        <div class="chevrons" style=" margin: 30px 0px 0px 50px;"></div>
+        <div class='chevrondown' style="margin: 20px 0px 0px 7px;"></div>
+        
+        </div>
+      </a>
+      
 </section>
 <div class="container" >
     <!-- /feature -->
@@ -138,16 +150,21 @@
         <div class="sticky">
             <!-- feature -->
           <section class="section feature mb-0" style="position: absolute;" id="feature">
-            <div class="container">
+            <div class="sticky-container-inner">
+              <div class="sticky">
               <div class="row">
-                  <div data-aos="fade-up" class="col-lg-8 text-center">
-                    <h2 class="section-title">Who are we?</h2>
-                    <p class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident</p>
+                  <div class="col-lg-8 text-center">
+                    <h2 data-aos="fade-up"
+                    data-aos-anchor-placement="center-center"  class="section-title">Who are we?</h2>
+                    <p  data-aos="fade-up"
+                    data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident</p>
                   </div>
+              </div>
               </div>
             </div>
           </section>
-        <div id="animation-container"></div>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-center" id="animation-container"></div>
       </div>
     </div>
     
@@ -160,9 +177,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <div data-aos="fade-up" class="text-center">
-        <h2 class="section-title">RoadMap</h2>
-        <p class="mb-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
+        <div class="text-center">
+        <h2 data-aos="fade-up"
+        data-aos-anchor-placement="center-center" class="section-title">RoadMap</h2>
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="center-center"  class="mb-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
           fugiat nulla pariatur. Excepteur sint occaecat </p>
         </div>
       </div>
@@ -184,12 +203,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-title">Our Team</h2>
-        <p class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>
+        <h2 data-aos="fade-up"
+        data-aos-anchor-placement="center-center" class="section-title">Our Team</h2>
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>
           fugiat nulla pariatur. Excepteur sint occaecat </p>
       </div>
     </div>
-    <div class="col-10 mx-auto">
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="center-center" class="col-10 mx-auto">
       <div class="team-slider">
         <!-- team-member -->
         <div class="team-member">
@@ -314,6 +336,26 @@
     AOS.init();
   </script>
 
+<script>
+  var btn = $('#button');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+$(document).ready(function() {
+	$('#nav').onePageNav();
+});
+
+</script>
 </body>
 </html>
