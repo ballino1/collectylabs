@@ -16,8 +16,14 @@ p, .paragraph {
   font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+h6, .h6 {
+  color: #000;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 1.5;
@@ -51,13 +57,14 @@ h6, .h6 {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
-  padding: 15px 60px;
+  padding: 15px 20px;
   font-weight: 400;
   border: 0;
   border-radius: 5px;
   position: relative;
   z-index: 1;
   transition: .2s ease;
+  margin-right: 30px;
 }
 
 .btn:focus {
@@ -253,7 +260,7 @@ a:hover {
 }
 
 .text-color {
-  color: #fff;
+  color: #000;
 }
 
 .primary-shadow {
@@ -1523,19 +1530,30 @@ textarea.form-control {
 
 .sticky-container {
     
-  margin-top: 300px;
+  
   height: 1600px;
   background-color: transparent;
 }
 .sticky {
   position: sticky;
-  top: 300px;
+  top: 250px;
+  text-align: center;
+  background-color: transparent;
+}
+.sticky2 {
+  position: sticky;
+  top: 50px;
   text-align: center;
   background-color: transparent;
 }
 #animation-container {
   padding-left: 700px;
   height: 475px; /*Static height so the page does not change on animation load*/
+}
+
+#animation-bg-container {
+  background-size: 100vw 100vh;
+  background-repeat:no-repeat;
 }
 
 svg {
@@ -1552,7 +1570,7 @@ svg {
   filter: url("#gooey");
   position: relative;
   background-color: #00acee;
-  margin: 100px 0px 0px 20px;
+  margin: 180px 0px 0px 20px;
   
 }
 #gooey-button:focus {
@@ -1932,6 +1950,77 @@ svg {
   }
  }
  svg{font-weight:bold;max-width:600px;height:100%;}
+ 
 
+a.animated-button.victoria-one {
+	border: 2px solid #4FFEC5;
+}
+a.animated-button.victoria-one:after {
+	background: #4FFEC5;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
 
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
 /*# sourceMappingURL=maps/style.css.map */
