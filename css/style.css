@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
   line-height: 31px;
   font-family: "Poppins", sans-serif;
@@ -31,6 +31,7 @@ h6, .h6 {
 
 h1, .h1 {
   font-size: 56px;
+  font-family: "Montserrat";
 }
 
 h2, .h2 {
@@ -79,7 +80,10 @@ h6, .h6 {
 .btn-primary {
   background-image: linear-gradient(25deg, #17ffd3 0%, #d3fc71 95%);
   color: #091337;
-  transition: background 1s ease-out;
+  transition: 1s ease-out;
+  border-radius: 0px;
+  width: 180px; height: 50px;
+  font-size: 14px;
 }
 
 .btn-primary:active {
@@ -428,7 +432,8 @@ a:hover {
 }
 
 .nav-bg {
-  background-color: rgb(24, 24, 24);
+ 
+  backdrop-filter: blur(5px);
   
 }
 
@@ -1552,7 +1557,7 @@ textarea.form-control {
 }
 .sticky2 {
   position: sticky;
-  top: 50px;
+  top: 100px;
   text-align: center;
   background-color: transparent;
 }
