@@ -54,6 +54,10 @@ h6, .h6 {
   font-size: 13px;
 }
 
+text{
+  font-family: "Montserrat", sans-serif;
+}
+
 .btn {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -82,8 +86,10 @@ h6, .h6 {
   color: #091337;
   transition: 1s ease-out;
   border-radius: 0px;
-  width: 180px; height: 50px;
+  width: 150px; height: 40px;
   font-size: 14px;
+  padding: 10px 10px 5px 10px;
+  margin-left: 10px;
 }
 
 .btn-primary:active {
@@ -1546,7 +1552,19 @@ textarea.form-control {
 .sticky-container-inner {
     
   
-  height: 300px;
+  height: 0px;
+  background-color: transparent;
+}
+.sticky-container-short {
+    
+  
+  height: 1000px;
+  background-color: transparent;
+}
+.sticky-container-team {
+    
+  
+  height: 1600px;
   background-color: transparent;
 }
 .sticky {
@@ -1561,6 +1579,12 @@ textarea.form-control {
   text-align: center;
   background-color: transparent;
 }
+.sticky3 {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  background-color: transparent;
+}
 #animation-container {
   padding-left: 700px;
   height: 475px; /*Static height so the page does not change on animation load*/
@@ -1568,7 +1592,8 @@ textarea.form-control {
 
 #animation-bg-container {
   background-size: 100vw 100vh;
-  background-repeat:no-repeat;
+  
+  
 }
 
 svg {
@@ -2206,5 +2231,7 @@ a.animated-button:link, a.animated-button:visited {
   font-style: italic;
   color: #96a2a7;
 }
+
+
 
 /*# sourceMappingURL=maps/style.css.map */
