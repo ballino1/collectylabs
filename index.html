@@ -21,20 +21,12 @@
   <!-- aos -->
   <link rel="stylesheet" href="plugins/aos/aos.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-
-  <script>
-    AOS.init();
-  </script>
-
-
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
   <script src="dist/scrollAnimate.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+  <script> AOS.init();</script>
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
@@ -47,16 +39,8 @@
   <a id="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
     </svg></a>
-  <defs>
-    <filter id="gooey">
-      <!-- in="sourceGraphic" -->
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-        result="highContrastGraphic" />
-      <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-    </filter>
-  </defs>
-  </svg>
+  
+
   <!-- navigation -->
   <section class="fixed-top navigation">
     <div class="container">
@@ -97,12 +81,12 @@
 
   <!-- hero area -->
 
-  <div class="sticky-container inner">
+  <div class="sticky-container inner" id="home">
     <div class="sticky3">
       <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="animation-bg-container"
         style="position: absolute;"></div>
 
-      <section class="hero-section hero" data-background="">
+      <section class="hero-section hero" data-background="" >
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center zindex-1">
@@ -130,14 +114,13 @@
               </svg>
             </div>
           </div>
+        </div>
       </section>
     </div>
   </div>
 
-
-
-  <!-- roadmap -->
-
+  <!-- aboutus -->
+  <div class="container">
   <div style="margin-top: -250px;"></div>
   <div class="sticky-container-short">
     <div class="sticky2">
@@ -146,6 +129,7 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="text-center">
+               
                 <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Collecty.</h2>
                 <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-50">
                   “World’s most prestige NFT incubator designed for high-level influencers, artists & brands” </p>
@@ -164,19 +148,20 @@
   </div>
   </div>
 
-  <!-- /feature -->
+
+  <!-- roadmap -->
 
   <div class="container">
     <div style="margin-top: 100px;"></div>
     <div class="sticky-container-short">
       <div class="sticky2">
         <!-- feature -->
-        <section class="section-lg pb-0" style="position: absolute;" id="pricing">
+        <section class="section-lg pb-0" style="position: absolute;" id="roadmap">
           <div class="sticky-container-inner">
             <div class="sticky">
               <div class="row">
                 <div class="col-lg-8 text-center">
-                  <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Who are we?
+                  <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Roadmap
                   </h2>
                   <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint
@@ -192,12 +177,12 @@
   </div>
 
 
+  <!-- team -->
 
   <div class="sticky-container-team">
     <div class="sticky2">
-      <!-- team -->
       <section class="section-lg team" id="team">
-        <div class="container-fluid">
+        
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Our Team</h2>
@@ -208,6 +193,7 @@
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="col-10 mx-auto">
             <div class="team-slider">
+
               <!-- team-member -->
               <div class="team-member">
                 <div class="d-flex mb-4">
@@ -222,6 +208,7 @@
                 <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
                   Consonantia, there live the blind texts. S eparated they</p>
               </div>
+
               <!-- team-member -->
               <div class="team-member">
                 <div class="d-flex mb-4">
@@ -236,6 +223,7 @@
                 <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
                   Consonantia, there live the blind texts. S eparated they</p>
               </div>
+
               <!-- team-member -->
               <div class="team-member">
                 <div class="d-flex mb-4">
@@ -251,6 +239,7 @@
                   Consonantia, there live
                   the blind texts. S eparated they</p>
               </div>
+
               <!-- team-member -->
               <div class="team-member">
                 <div class="d-flex mb-4">
@@ -266,6 +255,7 @@
                   Consonantia, there live
                   the blind texts. S eparated they</p>
               </div>
+
               <!-- team-member -->
               <div class="team-member">
                 <div class="d-flex mb-4">
@@ -282,19 +272,55 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- backgound image -->
+        
         <img src="" alt="" class="img-fluid team-bg">
-        <!-- background shapes -->
-
       </section>
-      <!-- /team -->
-
-      <!-- background shapes -->
     </div>
   </div>
-  </div>
 
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify" style="font-weight: 300; font-size: 17px; line-height: 31px; color: rgb(110, 110, 110);">Collecty is designed to build a bridge between brands and fans. Providing access to highly utilized NFTs, users of the platform will be able to participate in a secure and compliant environment and use assets both in and beyond the current ERC20 standards.</a>
+        </div>
+
+        <div class="col-xs-6 col-md-4"></div>
+
+        <div class="col-xs-6 col-md-2">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#feature">About Us</a></li>
+            <li><a class="nav-link" href="#roadmap">RoadMap</a></li>
+            <li><a class="nav-link" href="#team">Team</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 5px;">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+            <a href="#">Collecty Labs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="twitter" href="#"><img
+              src="images/smallimg/twitter-xxl.png" height="50%" width="50%" /></a></li>
+            <li><a class="discord" href="#"><img
+              src="images/smallimg/discord.png" height="50%" width="50%" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- jQuery -->
   <script src="plugins/jQuery/jquery.min.js"></script>
@@ -316,11 +342,11 @@
     var length = aContainerRect.height + 500;
     scrollAnimate({
       frames: {
-        path: "frames/",
+        path: "frame1/",
         prefix: "frame_",
         extension: "jpg",
-        amount: 33,
-        pad: "00"
+        amount: 115,
+        pad: "000"
       },
       parent: $aContainer,
       scroll: {
@@ -354,15 +380,13 @@
   </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 
   <script>
     var btn = $('#button');
 
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 300) {
+      if ($(window).scrollTop() > 600) {
         btn.addClass('show');
       } else {
         btn.removeClass('show');
@@ -371,7 +395,7 @@
 
     btn.on('click', function (e) {
       e.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, '300');
+      $('html, body').animate({ scrollTop: 0 }, '600');
     });
 
     $(document).ready(function () {
@@ -379,6 +403,14 @@
     });
 
   </script>
+
+  <script>if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    } else {
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+    }</script>
 
 </body>
 
