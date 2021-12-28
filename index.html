@@ -8,7 +8,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -31,11 +31,11 @@
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-  
+
   <script src="dist/scrollAnimate.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  
-  
+
+
   <!--Favicon-->
   <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
   <link rel="icon" href="images/logo2.png" type="image/x-icon">
@@ -43,333 +43,343 @@
 </head>
 
 <body>
-  
-  <a id="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg></a>
-    <defs>
-        <filter id="gooey">
-            <!-- in="sourceGraphic" -->
-            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
-            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-        </filter>
-    </defs>
-</svg>
-<!-- navigation -->
-<section class="fixed-top navigation">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html" style="margin-left: 20px;"><img src="images/logo.png" height="50px" width="50px" alt=""></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar -->
-      <div class="collapse navbar-collapse text-center" id="navbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#" class="btn animated-button victoria-one" style="margin-top: 0;width: 40px; height: 40px; padding: 8px 8px 8px 8px;"><img src="images/smallimg/twitter-xxl.png" height="100%" width="100%"/></a>
-      
-            <!--<a class="nav-link" href="index.html">Home</a>-->
-          </li>
-          <li class="nav-item">
-            <a href="#" class="btn btn-sm animated-button victoria-one" style="margin-top: 0; width: 40px; height: 40px;  padding: 8px 8px 8px 8px;"><img src="images/smallimg/discord.png"height="100%" width="100%" /></a>
-      
-            <!--<a class="nav-link page-scroll" href="#feature">Feature</a>-->
-          </li>
-          
-          
-          
-        </ul>
-        <a href="#" class="btn btn-primary  primary-shadow" >Connect Wallet</a>
-      </div>
-    </nav>
-  </div>
-</section>
-<!-- /navigation -->
 
-<!-- hero area -->
+  <a id="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+    </svg></a>
+  <defs>
+    <filter id="gooey">
+      <!-- in="sourceGraphic" -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+        result="highContrastGraphic" />
+      <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+    </filter>
+  </defs>
+  </svg>
+  <!-- navigation -->
+  <section class="fixed-top navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html" style="margin-left: 20px;"><img src="images/logo.png" height="50px"
+            width="50px" alt=""></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse text-center" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="btn animated-button victoria-one"
+                style="margin-top: 0;width: 40px; height: 40px; padding: 8px 8px 8px 8px;"><img
+                  src="images/smallimg/twitter-xxl.png" height="100%" width="100%" /></a>
 
-<div class="sticky-container inner">
-  <div class="sticky3">
-    <div data-aos="fade-up"
-    data-aos-anchor-placement="center-center"  id="animation-bg-container" style="position: absolute;"></div>
+              <!--<a class="nav-link" href="index.html">Home</a>-->
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-sm animated-button victoria-one"
+                style="margin-top: 0; width: 40px; height: 40px;  padding: 8px 8px 8px 8px;"><img
+                  src="images/smallimg/discord.png" height="100%" width="100%" /></a>
 
-<section class="hero-section hero" data-background="" >
-  <div class="container" >
-    <div class="row">
-      <div class="col-lg-12 text-center zindex-1">
-        <h1 data-aos="fade-up"  style="font-size: 140px; margin-top: 120px; margin-bottom: 150px; position:relative;" class="heading-style">Collecty</h1>
-        <svg viewbox="0 0 100 20" style="position: absolute; margin: -400px 0px 0px -300px;">
-            <defs>
-              <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="100%" stop-color="#4FFEC5"/>
-                <stop offset="100%" stop-color="#4FFEC5"/>
-              </linearGradient>
-              <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                  <animateTransform
-                      attributeName="transform"
-                      begin="0s"
-                      dur="1.5s"
-                      type="translate"
-                      from="0,0"
-                      to="40,0"
-                      repeatCount="indefinite" />
-                </path>
-              </pattern>
-            </defs>
-            <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="#fff"  fill-opacity="1">Labs</text>
-            <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)" fill-opacity="1">Labs</text>
-            </svg>
+              <!--<a class="nav-link page-scroll" href="#feature">Feature</a>-->
+            </li>
+
+
+
+          </ul>
+          <a href="#" class="btn btn-primary  primary-shadow">Connect Wallet</a>
         </div>
+      </nav>
     </div>
-</section>
-</div>
-</div>
-
-
-
-<!-- roadmap -->
-
-<div style="margin-top: -250px;"></div>
-<div class="sticky-container-short">
-  <div class="sticky2">
-<section class="section-lg pb-0 pricing" id="feature">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="text-center">
-        <h2 data-aos="fade-up"
-        data-aos-anchor-placement="center-center" class="section-title">Collecty.</h2>
-        <p data-aos="fade-up"
-        data-aos-anchor-placement="center-center"  class="mb-50">
-        “World’s most prestige NFT incubator designed for high-level influencers, artists & brands” </p>
-        <p data-aos="fade-up"
-        data-aos-anchor-placement="center-center"  class="mb-50">
-        Collecty is designed to build a bridge between brands and fans. Providing access to highly utilized NFTs, users of the platform will be able to participate in a secure and compliant environment and use assets both in and beyond the current ERC20 standards. </p>
-        </div>
-      </div>
-      <div class="col-lg-10 mx-auto">
-      </div>
-    </div>
-  </div>
   </section>
+  <!-- /navigation -->
+
+  <!-- hero area -->
+
+  <div class="sticky-container inner">
+    <div class="sticky3">
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="animation-bg-container"
+        style="position: absolute;"></div>
+
+      <section class="hero-section hero" data-background="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center zindex-1">
+              <h1 data-aos="fade-up"
+                style="font-size: 140px; margin-top: 120px; margin-bottom: 150px; position:relative;"
+                class="heading-style">Collecty</h1>
+              <svg viewbox="0 0 100 20" style="position: absolute; margin: -400px 0px 0px -300px;">
+                <defs>
+                  <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                  </linearGradient>
+                  <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                      mask="url(#mask)" fill="url(#gradient)">
+                      <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0"
+                        to="40,0" repeatCount="indefinite" />
+                    </path>
+                  </pattern>
+                </defs>
+                <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="#fff"
+                  fill-opacity="1">Labs</text>
+                <text data-aos="fade-up" text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)"
+                  fill-opacity="1">Labs</text>
+              </svg>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+
+
+
+  <!-- roadmap -->
+
+  <div style="margin-top: -250px;"></div>
+  <div class="sticky-container-short">
+    <div class="sticky2">
+      <section class="section-lg pb-0 pricing" id="feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="text-center">
+                <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Collecty.</h2>
+                <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-50">
+                  “World’s most prestige NFT incubator designed for high-level influencers, artists & brands” </p>
+                <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-50">
+                  Collecty is designed to build a bridge between brands and fans. Providing access to highly utilized
+                  NFTs, users of the platform will be able to participate in a secure and compliant environment and use
+                  assets both in and beyond the current ERC20 standards. </p>
+              </div>
+            </div>
+            <div class="col-lg-10 mx-auto">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
   </div>
-</div>
 
- <!-- /feature --> 
+  <!-- /feature -->
 
- <div class="container" >
+  <div class="container">
     <div style="margin-top: 100px;"></div>
-      <div class="sticky-container-short">
-        <div class="sticky2">
-            <!-- feature -->
-          <section class="section-lg pb-0" style="position: absolute;" id="pricing">
-            <div class="sticky-container-inner">
-              <div class="sticky">
+    <div class="sticky-container-short">
+      <div class="sticky2">
+        <!-- feature -->
+        <section class="section-lg pb-0" style="position: absolute;" id="pricing">
+          <div class="sticky-container-inner">
+            <div class="sticky">
               <div class="row">
-                  <div class="col-lg-8 text-center">
-                    <h2 data-aos="fade-up"
-                    data-aos-anchor-placement="center-center"  class="section-title">Who are we?</h2>
-                    <p  data-aos="fade-up"
-                    data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident</p>
-                  </div>
+                <div class="col-lg-8 text-center">
+                  <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Who are we?
+                  </h2>
+                  <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint
+                    occaecat cupidatat non proident</p>
+                </div>
               </div>
-              </div>
-            </div>
-          </section>
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="center-center" id="animation-container"></div>
-      </div>
-    </div>
-</div>
-
-
-
-<div class="sticky-container-team">
-  <div class="sticky2">
-<!-- team -->
-<section class="section-lg team" id="team">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 data-aos="fade-up"
-        data-aos-anchor-placement="center-center" class="section-title">Our Team</h2>
-        <p data-aos="fade-up"
-        data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>
-          fugiat nulla pariatur. Excepteur sint occaecat </p>
-      </div>
-    </div>
-    <div data-aos="fade-up"
-    data-aos-anchor-placement="center-center" class="col-10 mx-auto">
-      <div class="team-slider">
-        <!-- team-member -->
-        <div class="team-member">
-          <div class="d-flex mb-4">
-            <div class="mr-3">
-              <img class="rounded-circle img-fluid" src="" alt="">
-            </div>
-            <div class="align-self-center">
-              <h4 class="text-color">Becroft</h4>
-              <h6 class="text-color">web designer</h6>
             </div>
           </div>
-          <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
-        </div>
-        <!-- team-member -->
-        <div class="team-member">
-          <div class="d-flex mb-4">
-            <div class="mr-3">
-              <img class="rounded-circle img-fluid" src="" alt="">
-            </div>
-            <div class="align-self-center">
-              <h4 class="text-color">John Doe</h4>
-              <h6 class="text-color">web developer</h6>
-            </div>
-          </div>
-          <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
-        </div>
-        <!-- team-member -->
-        <div class="team-member">
-          <div class="d-flex mb-4">
-            <div class="mr-3">
-              <img class="rounded-circle img-fluid" src="" alt="">
-            </div>
-            <div class="align-self-center">
-              <h4 class="text-color">Erik Ligas</h4>
-              <h6 class="text-color">Programmer</h6>
-            </div>
-          </div>
-          <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-            the blind texts. S eparated they</p>
-        </div>
-        <!-- team-member -->
-        <div class="team-member">
-          <div class="d-flex mb-4">
-            <div class="mr-3">
-              <img class="rounded-circle img-fluid" src="" alt="">
-            </div>
-            <div class="align-self-center">
-              <h4 class="text-color">Erik Ligas</h4>
-              <h6 class="text-color">Programmer</h6>
-            </div>
-          </div>
-          <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-            the blind texts. S eparated they</p>
-        </div>
-        <!-- team-member -->
-        <div class="team-member">
-          <div class="d-flex mb-4">
-            <div class="mr-3">
-              <img class="rounded-circle img-fluid" src="" alt="">
-            </div>
-            <div class="align-self-center">
-              <h4 class="text-color">John Doe</h4>
-              <h6 class="text-color">web developer</h6>
-            </div>
-          </div>
-          <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
-        </div>
+        </section>
+        <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="animation-container"></div>
       </div>
     </div>
   </div>
-  <!-- backgound image -->
-  <img src="" alt="" class="img-fluid team-bg">
-  <!-- background shapes -->
-
- </section>
-<!-- /team -->
-
-  <!-- background shapes -->
-</div>
-</div>
-</div>
 
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- venobox -->
-<script src="plugins/Venobox/venobox.min.js"></script>
-<!-- aos -->
-<script src="plugins/aos/aos.js"></script>
-<!-- Main Script -->
-<script src="js/script.js"></script>
 
-<script>
-  var $aContainer = document.getElementById("animation-bg-container");
-  var aContainerRect = $aContainer.getBoundingClientRect();
-  var start = aContainerRect.top;
-  var length = aContainerRect.height + 500;
-  scrollAnimate({
-    frames: {
-      path: "frames/",
-      prefix: "frame_",
-      extension: "jpg",
-      amount: 33,
-      pad: "00"
-    },
-    parent: $aContainer,
-    scroll: {
-      start: start,
-      length: length
-    }
-  });
-  
-</script>
+  <div class="sticky-container-team">
+    <div class="sticky2">
+      <!-- team -->
+      <section class="section-lg team" id="team">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 data-aos="fade-up" data-aos-anchor-placement="center-center" class="section-title">Our Team</h2>
+              <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-100">Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu<br>
+                fugiat nulla pariatur. Excepteur sint occaecat </p>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="col-10 mx-auto">
+            <div class="team-slider">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Becroft</h4>
+                    <h6 class="text-color">web designer</h6>
+                  </div>
+                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
+              </div>
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">John Doe</h4>
+                    <h6 class="text-color">web developer</h6>
+                  </div>
+                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
+              </div>
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Erik Ligas</h4>
+                    <h6 class="text-color">Programmer</h6>
+                  </div>
+                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live
+                  the blind texts. S eparated they</p>
+              </div>
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Erik Ligas</h4>
+                    <h6 class="text-color">Programmer</h6>
+                  </div>
+                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live
+                  the blind texts. S eparated they</p>
+              </div>
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">John Doe</h4>
+                    <h6 class="text-color">web developer</h6>
+                  </div>
+                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- backgound image -->
+        <img src="" alt="" class="img-fluid team-bg">
+        <!-- background shapes -->
 
-<script>
-  var $aContainer1 = document2.getElementById("animation-container");
-  var aContainerRect1 = $aContainer1.getBoundingClientRect();
-  var start1 = aContainerRect1.top;
-  var length1 = aContainerRect1.height + 100; 
-  scrollAnimate({
-    frames: {
-      path: "frame/",
-      prefix: "frame_",
-      extension: "jpg",
-      amount: 41,
-      pad: "00"
-    },
-    parent: $aContainer1,
-    scroll: {
-      start: start1,
-      length: length1
-    }
-  });
-  
-</script>
+      </section>
+      <!-- /team -->
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- background shapes -->
+    </div>
+  </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- venobox -->
+  <script src="plugins/Venobox/venobox.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+  <script>
+    var $aContainer = document.getElementById("animation-bg-container");
+    var aContainerRect = $aContainer.getBoundingClientRect();
+    var start = aContainerRect.top;
+    var length = aContainerRect.height + 500;
+    scrollAnimate({
+      frames: {
+        path: "frames/",
+        prefix: "frame_",
+        extension: "jpg",
+        amount: 33,
+        pad: "00"
+      },
+      parent: $aContainer,
+      scroll: {
+        start: start,
+        length: length
+      }
+    });
+
+  </script>
+
+  <script>
+    var $aContainer1 = document2.getElementById("animation-container");
+    var aContainerRect1 = $aContainer1.getBoundingClientRect();
+    var start1 = aContainerRect1.top;
+    var length1 = aContainerRect1.height + 100;
+    scrollAnimate({
+      frames: {
+        path: "frame/",
+        prefix: "frame_",
+        extension: "jpg",
+        amount: 41,
+        pad: "00"
+      },
+      parent: $aContainer1,
+      scroll: {
+        start: start1,
+        length: length1
+      }
+    });
+
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-<script>
-  var btn = $('#button');
+  <script>
+    var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 
-$(document).ready(function() {
-	$('#nav').onePageNav();
-});
+    $(document).ready(function () {
+      $('#nav').onePageNav();
+    });
 
-</script>
+  </script>
 
 </body>
+
 </html>
