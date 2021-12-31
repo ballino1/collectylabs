@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Bebas Neue");
+@import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 
 body {
   line-height: 31px;
@@ -29,21 +31,21 @@ h5,
 .h5 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  
   line-height: 1.5;
 }
 h6,
 .h6 {
   color: #000;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  
   line-height: 1.5;
 }
 
 h1,
 .h1 {
   
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 @media screen and (min-width: 601px) {
@@ -69,7 +71,7 @@ h3,
   
   position:relative; 
   color: #49EF9F;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 @media screen and (min-width: 601px) {
@@ -116,7 +118,8 @@ text {
   position: relative;
   z-index: 1;
   transition: 0.2s ease;
-  
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .btn:focus {
@@ -477,10 +480,20 @@ a:hover {
   transition: 0.3s ease;
 }
 
+.navbar-logo {
+  transition: 0.3s ease;
+  
+  
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     padding-bottom: 20px;
     color: #ffffff;
+  }
+  .navbar-logo {
+    
+    
   }
 }
 
@@ -1375,7 +1388,7 @@ textarea.form-control {
 }
 
 .sticky-container {
-  height: 1600px;
+  height: 2000px;
   background-color: transparent;
   
 }
@@ -1415,6 +1428,28 @@ textarea.form-control {
   background-color: transparent;
   
 }
+.sticky4 {
+  position: sticky;
+  top: 0px;
+  margin-top: 0px;
+  text-align: center;
+  background-color: transparent;
+  
+}
+.stickyabout {
+  position: sticky;
+  top: 100px;
+  margin-top: -350px;
+  text-align: center;
+  background-color: transparent;
+}
+@media (max-width: 500px) {
+  .stickyabout {
+  
+    top: 0px;
+    
+  }
+}
 
 #animation-container {
   padding-left: 700px;
@@ -1423,10 +1458,14 @@ textarea.form-control {
 
 
 #animation-bg-container {
-  
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  height:100%;
+  position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  
   
 }
 

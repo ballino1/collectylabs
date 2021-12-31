@@ -46,7 +46,7 @@
   <section class="fixed-top navigation">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="50px"
+        <a class="navbar-logo" href="index.html"><img src="images/logo.png" height="50px"
             width="50px" alt=""></a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,8 +84,7 @@
 
   <div class="sticky-container" id="home">
     <div class="sticky3">
-      <div id="animation-bg-container"
-        style="position: fixed;"></div>
+      <div id="animation-bg-container"></div>
       <section class="hero-section hero">
         <div class="container">
           <div class="row">
@@ -108,7 +107,7 @@
   <div class="container">
 
     <div class="sticky-container-about">
-      <div class="sticky3">
+      <div class="stickyabout">
         <section class="section-lg pb-0 pricing" id="feature">
           <div class="container">
             <div class="row">
@@ -371,7 +370,7 @@
     var btn = $('#button');
 
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 600) {
+      if ($(window).scrollTop() > 1000) {
         btn.addClass('show');
       } else {
         btn.removeClass('show');
@@ -387,6 +386,17 @@
       $('#nav').onePageNav();
     });
   </script>
+
+<script>
+  $(window).scroll(function() {
+  if ($(this).scrollTop() > 1000) {
+    $('#animation-bg-container').fadeOut();
+  } else {
+    $('#animation-bg-container').fadeIn();
+  }
+});
+
+</script>
 
   <script>if (history.scrollRestoration) {
       history.scrollRestoration = 'manual';
