@@ -1467,10 +1467,7 @@ textarea.form-control {
   left: 50%;
   transform: translate(-50%, -50%);   
   
-  
-
 }
-
 
 #canvas {
 
@@ -1478,7 +1475,8 @@ textarea.form-control {
   left: 50%;
   transform: translate(-50%,-50%);   
   position: fixed;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 700px;
   
 }
 #canvas1 {
