@@ -491,10 +491,7 @@ a:hover {
     padding-bottom: 20px;
     color: #ffffff;
   }
-  .navbar-logo {
-    
-    
-  }
+  
 }
 
 .nav-bg {
@@ -1456,7 +1453,6 @@ textarea.form-control {
   height: 475px; /*Static height so the page does not change on animation load*/
 }
 
-
 #animation-bg-container {
   display:flex;
   justify-content:center;
@@ -1465,13 +1461,42 @@ textarea.form-control {
   position: fixed;
   left: 50%;
   right: 50%;
+
+ position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
   
   
+
+}
+
+
+#canvas {
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);   
+  position: fixed;
+  min-height: 100vh;
+  
+}
+#canvas1 {
+  padding: 0;
+  margin: auto;
+  display: block;
+ 
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
 }
 
 .center {
-
-
+  
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

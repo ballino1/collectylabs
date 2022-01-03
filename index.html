@@ -83,8 +83,8 @@
   <!-- hero area -->
 
   <div class="sticky-container" id="home">
-    <div class="sticky3">
-      <div id="animation-bg-container"></div>
+    <div  id="anchor" class="sticky3">
+      <canvas id="canvas"></canvas>
       <section class="hero-section hero">
         <div class="container">
           <div class="row">
@@ -105,10 +105,9 @@
 
   <!-- aboutus -->
   <div class="container">
-
     <div class="sticky-container-about">
       <div class="stickyabout">
-        <div id="animation-container"></div>
+        
         <section class="section-lg pb-0 pricing" id="feature">
           <div class="container">
             <div class="row">
@@ -322,6 +321,29 @@
   <!-- Main Script -->
   <script src="js/script.js"></script>
 
+  <script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+  <script src="js/frameByFrame.js"></script>
+  
+  <script>
+    window.onload = function () {
+      $("#canvas").frameByFrame(
+        [
+          [0, 800],
+          [0, 72]
+        ],
+        {
+          canvasWidth: 2560,
+          canvasHeight: 1080,
+          canvasImagesPath: "bgframe/",
+          canvasImagesFormat: ".jpg",
+          frameCount: 71,
+          anchor: "#anchor"
+        }
+      );
+    };
+  </script>
+  
   <script>
     var $aContainer = document.getElementById("animation-bg-container");
     var aContainerRect = $aContainer.getBoundingClientRect();
@@ -345,21 +367,21 @@
 
   <script>
     var $aContainer1 = document1.getElementById("animation-container");
-    var aContainerRect1 = $aContainer1.getBoundingClientRect();
-    var start1 = aContainerRect1.top;
-    var length1 = aContainerRect1.height + 100;
+    var aContainerRect = $aContainer.getBoundingClientRect();
+    var start = aContainerRect.top;
+    var length = aContainerRect.height + 100;
     scrollAnimate({
       frames: {
-        path: "frame/",
-        prefix: "frame_",
+        path: "bgframe/",
+        prefix: "",
         extension: "jpg",
-        amount: 41,
-        pad: "00"
+        amount: 71,
+        pad: "0"
       },
-      parent: $aContainer1,
+      parent: $aContainer,
       scroll: {
-        start: start1,
-        length: length1
+        start: start,
+        length: length
       }
     });
   </script>
@@ -391,9 +413,9 @@
 <script>
   $(window).scroll(function() {
   if ($(this).scrollTop() > 1000) {
-    $('#animation-bg-container').fadeOut();
+    $('#canvas').fadeOut();
   } else {
-    $('#animation-bg-container').fadeIn();
+    $('#canvas').fadeIn();
   }
 });
 
@@ -412,6 +434,12 @@
     $(window).on("load", function () {
       $(".loader-wrapper").fadeOut();
     });
+  </script>
+
+  <script>
+    var canvas = document.getElementById('responsive-canvas');
+    var heightRatio = 1.5;
+    canvas.height = canvas.width * heightRatio;
   </script>
 
 </body>
