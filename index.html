@@ -127,12 +127,12 @@
 
   <!-- roadmap -->
 
-  <div class="container">
+  <div class="container" id="roadmap">
     <div style="margin-top: 100px;"></div>
     <div class="sticky-container-long">
       <div class="sticky2">
         <!-- feature -->
-        <section class="section-lg pb-0 pricing" id="feature">
+        <section class="section-lg pb-0 pricing" >
 
           <div class="row">
             <div class="col-lg-12 text-center">
@@ -201,10 +201,10 @@
 
   <!-- team -->
 
-  <div class="sticky-container-team">
+  <div class="sticky-container-team" >
     <div class="sticky3">
       <section class="section-lg team" id="team">
-        <div class="container">
+        <div class="container" >
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="text-center">
@@ -482,6 +482,7 @@
         $('#roadmap4').fadeOut();
         $('#roadmap5').fadeOut();
         $('#roadmap6').fadeOut();
+        $('#roadmapheader').fadeIn();
       } else {
 
         if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
@@ -496,6 +497,7 @@
             $('#roadmap4').fadeOut();
             $('#roadmap5').fadeOut();
             $('#roadmap6').fadeOut();
+            $('#roadmapheader').fadeIn();
           }
           else {
             if ($(this).scrollTop() > 3500 && $(this).scrollTop() < 3700) {
@@ -510,6 +512,7 @@
                 $('#roadmap4').fadeOut();
                 $('#roadmap5').fadeOut();
                 $('#roadmap6').fadeOut();
+                $('#roadmapheader').fadeIn();
               }
               else {
                 if ($(this).scrollTop() > 4100 && $(this).scrollTop() < 4200) {
@@ -523,6 +526,7 @@
                     $('#roadmap1').fadeOut();
                     $('#roadmap5').fadeOut();
                     $('#roadmap6').fadeOut();
+                    $('#roadmapheader').fadeIn();
 
                   } else {
                     if ($(this).scrollTop() > 4600 && $(this).scrollTop() < 4800) {
@@ -537,6 +541,7 @@
                         $('#roadmap4').fadeOut();
                         $('#roadmap3').fadeOut();
                         $('#roadmap6').fadeOut();
+                        $('#roadmapheader').fadeIn();
                       }
                       else {
                         if ($(this).scrollTop() > 5200 && $(this).scrollTop() < 5400) {
