@@ -344,6 +344,10 @@ a:hover {
   color: #45d9f0;
 }
 
+.discord {
+  color: #7289DA;
+}
+
 .linkedin {
   color: #1b91ff;
 }
@@ -1386,7 +1390,7 @@ textarea.form-control {
 }
 
 .sticky-container {
-  height: 2000px;
+  height: 1500px;
   background-color: transparent;
   
 }
@@ -1506,6 +1510,8 @@ svg {
   display: block;
   margin: auto;
 }
+
+
 
 .example2 {
   height: 250px;
@@ -1932,9 +1938,9 @@ a.animated-button:visited {
 {
   background-color:#00aced
 }
-.social-icons a.linkedin:hover
+.social-icons a.discord:hover
 {
-  background-color:#7289da
+  background-color:#7289DA
 }
 .social-icons a.dribbble:hover
 {
@@ -2018,4 +2024,19 @@ a.animated-button:visited {
   100% {
     height: 0%;
   }
+}
+
+@media screen and (max-width: 767px) {
+  #footerabout {
+    display: none;
+  }
+  #footerlinks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #footerlogo {
+    display: none;
+  
 }
