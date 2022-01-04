@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
-@import url("https://fonts.googleapis.com/css?family=Bebas Neue");
+
 
 body {
   line-height: 31px;
@@ -78,6 +78,9 @@ h3,
   h3 {
     margin: -50px auto; 
     font-size: 80px;
+  }
+  .smalltext {
+    font-size: 65px;
   }
 }
 
@@ -1407,6 +1410,11 @@ textarea.form-control {
   background-color: transparent;
   
 }
+.sticky-container-long {
+  height: 3500px;
+  background-color: transparent;
+  
+}
 .sticky-container-team {
   height: 1600px;
   background-color: transparent;
@@ -2038,5 +2046,35 @@ a.animated-button:visited {
 @media screen and (min-width: 768px) {
   #footerlogo {
     display: none;
+  
+}
+}
+
+.centerabsolute {
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 100px;
+  
+}
+
+.center-roadmap-absolute {
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  
+}
+
+#roadmapheader{
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 0px;
   
 }
