@@ -2070,8 +2070,12 @@ a.animated-button:visited {
 .centerabsolute {
   left:0;
   right:0;
+  top: 0;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   position: absolute;
   margin-top: 100px;
   
@@ -2080,8 +2084,12 @@ a.animated-button:visited {
 .center-roadmap-absolute {
   left:0;
   right:0;
+  top: 0;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   position: absolute;
-  
+  margin-top:-50px;
 }
