@@ -31,7 +31,6 @@ h5,
 .h5 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  
   line-height: 1.5;
 }
 h6,
@@ -2084,15 +2083,5 @@ a.animated-button:visited {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  
-}
-
-#roadmapheader{
-  left:0;
-  right:0;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  margin-top: 0px;
   
 }
