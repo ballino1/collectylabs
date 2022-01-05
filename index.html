@@ -472,11 +472,13 @@
         $('#roadmap4').fadeOut();
         $('#roadmap5').fadeOut();
         $('#roadmap6').fadeOut();
+        $('#roadmapheader').fadeIn();
         
       } else {
 
         if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
           $('#roadmap1').fadeOut();
+          
 
         }
         else {
@@ -487,6 +489,7 @@
             $('#roadmap4').fadeOut();
             $('#roadmap5').fadeOut();
             $('#roadmap6').fadeOut();
+            $('#roadmapheader').fadeIn();
             
           }
           else {
@@ -502,6 +505,7 @@
                 $('#roadmap4').fadeOut();
                 $('#roadmap5').fadeOut();
                 $('#roadmap6').fadeOut();
+                $('#roadmapheader').fadeIn();
                 
               }
               else {
@@ -516,6 +520,7 @@
                     $('#roadmap1').fadeOut();
                     $('#roadmap5').fadeOut();
                     $('#roadmap6').fadeOut();
+                    $('#roadmapheader').fadeIn();
                     
 
                   } else {
@@ -531,6 +536,7 @@
                         $('#roadmap4').fadeOut();
                         $('#roadmap3').fadeOut();
                         $('#roadmap6').fadeOut();
+                        $('#roadmapheader').fadeIn();
                         
                       }
                       else {
@@ -545,12 +551,15 @@
                             $('#roadmap1').fadeOut();
                             $('#roadmap5').fadeOut();
                             $('#roadmap4').fadeOut();
+                            $('#roadmapheader').fadeIn();
                             
 
                           } else {
                         if ($(this).scrollTop() > 5800) {
                           $('#roadmap6').fadeOut();
                           
+                        }else {
+                          $('#roadmapheader').fadeIn();
                         }
                         }
                         }
