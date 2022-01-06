@@ -465,6 +465,23 @@
     $(window).scroll(function () {
 
 
+      if ($(this).scrollTop() > 2550 && $(this).scrollTop() < 5800) {
+        
+        $('#roadmapheader').fadeIn();
+        
+      }
+      else{
+        $('#roadmapheader').fadeOut();
+      }
+    });
+    
+
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+
+
       if ($(this).scrollTop() < 2900) {
         $('#roadmap1').fadeIn();
         $('#roadmap2').fadeOut();
@@ -472,7 +489,7 @@
         $('#roadmap4').fadeOut();
         $('#roadmap5').fadeOut();
         $('#roadmap6').fadeOut();
-        $('#roadmapheader').fadeIn();
+        
         
       } else {
 
@@ -489,7 +506,7 @@
             $('#roadmap4').fadeOut();
             $('#roadmap5').fadeOut();
             $('#roadmap6').fadeOut();
-            $('#roadmapheader').fadeIn();
+            
             
           }
           else {
@@ -505,7 +522,7 @@
                 $('#roadmap4').fadeOut();
                 $('#roadmap5').fadeOut();
                 $('#roadmap6').fadeOut();
-                $('#roadmapheader').fadeIn();
+               
                 
               }
               else {
@@ -520,7 +537,7 @@
                     $('#roadmap1').fadeOut();
                     $('#roadmap5').fadeOut();
                     $('#roadmap6').fadeOut();
-                    $('#roadmapheader').fadeIn();
+                   
                     
 
                   } else {
@@ -536,7 +553,7 @@
                         $('#roadmap4').fadeOut();
                         $('#roadmap3').fadeOut();
                         $('#roadmap6').fadeOut();
-                        $('#roadmapheader').fadeIn();
+                        
                         
                       }
                       else {
@@ -551,7 +568,7 @@
                             $('#roadmap1').fadeOut();
                             $('#roadmap5').fadeOut();
                             $('#roadmap4').fadeOut();
-                            $('#roadmapheader').fadeIn();
+                            
                             
 
                           } else {
@@ -559,7 +576,7 @@
                           $('#roadmap6').fadeOut();
                           
                         }else {
-                          $('#roadmapheader').fadeIn();
+                          
                         }
                         }
                         }
