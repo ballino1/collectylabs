@@ -461,6 +461,30 @@
 
   </script>
 
+<script>
+  
+  $(window).scroll(function () {
+
+    if ($(this).scrollTop() > 750 && $(this).scrollTop() < 900) {
+      
+      window.scrollTo({ top: 1400, behavior: 'smooth' });
+    }
+
+    if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
+      
+      window.scrollTo({ top: 2600, behavior: 'smooth' });
+    }
+
+    if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
+      
+      window.scrollTo({ top: 6400, behavior: 'smooth' });
+    }
+    
+  });
+  
+
+</script>
+
   <script>
     $(window).scroll(function () {
 
@@ -601,6 +625,7 @@
       }
     }
   </script>
+
 
   <script>
     $(window).on("load", function () {
