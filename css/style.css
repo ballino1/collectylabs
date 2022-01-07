@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-html {
-  overflow-x: hidden;
-}
 
 body {
   line-height: 31px;
@@ -12,7 +9,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
-  overflow-x: hidden;
+  
 }
 
 p,
