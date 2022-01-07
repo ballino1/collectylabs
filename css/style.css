@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
 body {
@@ -47,6 +48,12 @@ h1,
   font-family: "Bebas Neue", sans-serif;
 }
 
+.ralefont {
+  
+  font-family: 'Raleway', sans-serif;
+  
+}
+
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 140px;
@@ -79,13 +86,18 @@ h3,
   font-family: "Bebas Neue", sans-serif;
 }
 
+text {
+  position:relative; 
+}
+
 .labsheader {
-  font-size: 80px;
+  font-size: 50px;
+  
 }
 
 @media screen and (min-width: 601px) {
   h3 {
-    margin: -50px auto; 
+    margin: -70px auto; 
     font-size: 55px
   }
   .smalltext {
@@ -100,7 +112,8 @@ h3,
   }
 
   .labsheader {
-    font-size: 50px;
+    font-size: 40px;
+    
   }
 
 }
