@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 body {
   line-height: 31px;
@@ -9,7 +8,6 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
-  
 }
 
 p,
@@ -39,25 +37,26 @@ h6,
 .h6 {
   color: #000;
   font-family: "Poppins", sans-serif;
-  
+
   line-height: 1.5;
 }
 
 h1,
 .h1 {
-  
   font-family: "Bebas Neue", sans-serif;
 }
 
 .ralefont {
-  
-  font-family: 'Raleway', sans-serif;
-  
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (min-width: 601px) {
   h1 {
     font-size: 140px;
+  }
+
+  #phone-bg {
+    visibility: hidden;
   }
 }
 
@@ -66,13 +65,10 @@ h1,
     font-size: 100px;
   }
 
-  
- #canvas {
-  visibility: hidden;
+  #canvas {
+    visibility: hidden;
+  }
 }
-
-}
-
 
 h2,
 .h2 {
@@ -81,25 +77,23 @@ h2,
 
 h3,
 .h3 {
-  
-  position:relative; 
-  color: #49EF9F;
+  position: relative;
+  color: #49ef9f;
   font-family: "Bebas Neue", sans-serif;
 }
 
 text {
-  position:relative; 
+  position: relative;
 }
 
 .labsheader {
   font-size: 50px;
-  
 }
 
 @media screen and (min-width: 601px) {
   h3 {
-    margin: -70px auto; 
-    font-size: 55px
+    margin: -70px auto;
+    font-size: 55px;
   }
   .smalltext {
     font-size: 65px;
@@ -114,9 +108,7 @@ text {
 
   .labsheader {
     font-size: 40px;
-    
   }
-
 }
 
 h4,
@@ -171,7 +163,6 @@ text {
   height: 40px;
   font-size: 14px;
   padding: 10px 10px 5px 10px;
-  
 }
 
 .btn-primary:active {
@@ -377,7 +368,7 @@ a:hover {
 }
 
 .discord {
-  color: #7289DA;
+  color: #7289da;
 }
 
 .linkedin {
@@ -518,8 +509,6 @@ a:hover {
 
 .navbar-logo {
   transition: 0.3s ease;
-  
-  
 }
 
 @media (max-width: 991px) {
@@ -527,7 +516,6 @@ a:hover {
     padding-bottom: 20px;
     color: #ffffff;
   }
-  
 }
 
 .nav-bg {
@@ -793,14 +781,15 @@ a:hover {
 }
 
 .team {
-  overflow: visible;
+  
+  overflow: hidden;
   position: relative;
 }
 
 .team-slider {
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
   padding-bottom: 100px;
-  
 }
 
 @media screen and (max-width: 600px) {
@@ -808,7 +797,6 @@ a:hover {
     overflow: visible;
   }
 }
-
 
 .team-slider .slick-list {
   overflow: visible;
@@ -847,7 +835,6 @@ a:hover {
 
 .team-member:hover {
   margin-top: -10px;
-
 }
 
 @media (max-width: 1200px) {
@@ -1439,7 +1426,6 @@ textarea.form-control {
 .sticky-container {
   height: 1500px;
   background-color: transparent;
-  
 }
 .sticky-container-about {
   height: 1400px;
@@ -1452,12 +1438,10 @@ textarea.form-control {
 .sticky-container-short {
   height: 1000px;
   background-color: transparent;
-  
 }
 .sticky-container-long {
   height: 3500px;
   background-color: transparent;
-  
 }
 .sticky-container-team {
   height: 1600px;
@@ -1480,7 +1464,6 @@ textarea.form-control {
   top: 0px;
   text-align: center;
   background-color: transparent;
-  
 }
 .sticky4 {
   position: sticky;
@@ -1488,7 +1471,6 @@ textarea.form-control {
   margin-top: 0px;
   text-align: center;
   background-color: transparent;
-  
 }
 .stickyabout {
   position: sticky;
@@ -1499,9 +1481,7 @@ textarea.form-control {
 }
 @media (max-width: 500px) {
   .stickyabout {
-  
     top: 0px;
-    
   }
 }
 
@@ -1511,59 +1491,51 @@ textarea.form-control {
 }
 
 #animation-bg-container {
-  display:flex;
-  justify-content:center;
-  align-items:flex-end;
-  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
   position: fixed;
   left: 50%;
   right: 50%;
 
- position: absolute;
+  position: absolute;
   top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);   
-  
+  transform: translate(-50%, -50%);
 }
 
 #canvas {
-
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);   
+  transform: translate(-50%, -50%);
   position: fixed;
   height: 100vh;
   min-height: 700px;
-  
 }
 #canvas1 {
   padding: 0;
   margin: auto;
   display: block;
- 
+
   height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
 .center {
-  
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-    
 }
 
 svg {
   display: block;
   margin: auto;
 }
-
-
 
 .example2 {
   height: 250px;
@@ -1777,9 +1749,8 @@ a.animated-button:visited {
 }
 
 #button {
-  
   display: inline-block;
-  background-color: #49EF9F;
+  background-color: #49ef9f;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -1796,10 +1767,8 @@ a.animated-button:visited {
 
 #button:hover {
   cursor: pointer;
-  background-color: #49EF9F;
+  background-color: #49ef9f;
   opacity: 1;
-  
-  
 }
 #button:active {
   background-color: rgb(252, 252, 252);
@@ -1807,7 +1776,6 @@ a.animated-button:visited {
 #button.show {
   opacity: 1;
   visibility: visible;
-  
 }
 
 /* Styles for the content section */
@@ -1837,178 +1805,153 @@ a.animated-button:visited {
   font-style: italic;
   color: #96a2a7;
 }
-.site-footer
-{
-  background-color:rgb(24, 24, 24);
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+.site-footer {
+  background-color: rgb(24, 24, 24);
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
 }
-.site-footer hr.small
-{
-  margin:20px 0
+.site-footer hr.small {
+  margin: 20px 0;
 }
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
 }
-.site-footer a
-{
-  color:#737373;
+.site-footer a {
+  color: #737373;
 }
-.site-footer a:hover
-{
-  color:#49EF9F;
-  text-decoration:none;
+.site-footer a:hover {
+  color: #49ef9f;
+  text-decoration: none;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
+.footer-links {
+  padding-left: 0;
+  list-style: none;
 }
-.footer-links li
-{
-  display:block
+.footer-links li {
+  display: block;
 }
-.footer-links a
-{
-  color:#737373
+.footer-links a {
+  color: #737373;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#49EF9F;
-  text-decoration:none;
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #49ef9f;
+  text-decoration: none;
 }
-.footer-links.inline li
-{
-  display:inline-block
+.footer-links.inline li {
+  display: inline-block;
 }
-.site-footer .social-icons
-{
-  text-align:right
+.site-footer .social-icons {
+  text-align: right;
 }
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
 }
-.copyright-text
-{
-  margin:0
+.copyright-text {
+  margin: 0;
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
   }
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
   }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
   }
 }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
 }
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
 }
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
 }
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
 }
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
 }
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
+.social-icons a.twitter:hover {
+  background-color: #00aced;
 }
-.social-icons a.discord:hover
-{
-  background-color:#7289DA
+.social-icons a.discord:hover {
+  background-color: #7289da;
 }
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
   }
 }
 .loader-wrapper {
   z-index: 9999999;
-  position:fixed;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background-color: #000000;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -2017,7 +1960,7 @@ a.animated-button:visited {
   width: 30px;
   height: 30px;
   position: relative;
-  border: 4px solid #Fff;
+  border: 4px solid #fff;
   animation: loader 2s infinite ease;
 }
 .loader-inner {
@@ -2031,19 +1974,19 @@ a.animated-button:visited {
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
@@ -2053,19 +1996,19 @@ a.animated-button:visited {
   0% {
     height: 0%;
   }
-  
+
   25% {
     height: 0%;
   }
-  
+
   50% {
     height: 100%;
   }
-  
+
   75% {
     height: 100%;
   }
-  
+
   100% {
     height: 0%;
   }
@@ -2083,16 +2026,16 @@ a.animated-button:visited {
 @media screen and (min-width: 768px) {
   #footerlogo {
     display: none;
-}
+  }
 
-.h3 {
-  font-size: 20px;
-}
+  .h3 {
+    font-size: 20px;
+  }
 }
 
 .centerabsolute {
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   margin-left: auto;
@@ -2101,12 +2044,11 @@ a.animated-button:visited {
   margin-bottom: auto;
   position: absolute;
   margin-top: 100px;
-  
 }
 
 .center-roadmap-absolute {
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   margin-left: auto;
@@ -2114,7 +2056,7 @@ a.animated-button:visited {
   margin-top: auto;
   margin-bottom: auto;
   position: absolute;
-  margin-top:-50px;
+  margin-top: -50px;
 }
 
 .headershadow {
@@ -2122,11 +2064,22 @@ a.animated-button:visited {
 }
 
 .textshadow {
-  text-shadow: 3px 3px 20px #000000,
-    -2px 1px 30px #000000;
+  text-shadow: 3px 3px 20px #000000, -2px 1px 30px #000000;
 }
 
 .textshadow1 {
-  text-shadow: 3px 3px 10px #000000,
-    -2px 1px 30px #000000;
+  text-shadow: 3px 3px 10px #000000, -2px 1px 30px #000000;
 }
+
+#phone-bg {
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 100vw;
+  min-height: 700px;
+  
+}
+
+
