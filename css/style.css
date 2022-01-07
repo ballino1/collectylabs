@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 31px;
   font-family: "Poppins", sans-serif;

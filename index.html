@@ -483,13 +483,16 @@
   </script>
 
   <script>
+
+    
 if (window.screen.width > 600) {
+  
     var lastScrollTop = 0;
     $(window).on('scroll', function () {
       st = $(this).scrollTop();
       if (st < lastScrollTop) {
 
-        if ($(this).scrollTop() > 6400 && $(this).scrollTop() < 6500) {
+        if ($(this).scrollTop() > 6300 && $(this).scrollTop() < 6400) {
 
           window.scrollTo({ top: 5600, behavior: 'smooth' });
         }
@@ -507,7 +510,7 @@ if (window.screen.width > 600) {
       }
       else {
 
-        if ($(this).scrollTop() > 750 && $(this).scrollTop() < 780) {
+        if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
 
           window.scrollTo({ top: 1400, behavior: 'smooth' });
         }
