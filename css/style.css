@@ -800,6 +800,7 @@ a:hover {
 .team-slider {
   overflow: hidden;
   padding-bottom: 100px;
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -841,6 +842,7 @@ a:hover {
   box-shadow: 0px 23px 34px 0px rgba(94, 209, 171, 0.49);
   margin: 0 33px;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .team-member:hover {
