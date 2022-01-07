@@ -798,8 +798,14 @@ a:hover {
 }
 
 .team-slider {
-  overflow: visible;
+  overflow: hidden;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .team-slider {
+    overflow: visible;
+  }
 }
 
 
