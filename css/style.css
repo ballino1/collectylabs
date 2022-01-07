@@ -787,8 +787,10 @@ a:hover {
 }
 
 .team-slider {
+  
   overflow-y: visible;
   overflow-x: hidden;
+  overflow: visible;
   padding-bottom: 100px;
 }
 
