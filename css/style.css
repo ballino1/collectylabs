@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 html {
-  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -2086,6 +2086,11 @@ a.animated-button:visited {
   width: 100vw;
   min-height: 700px;
   
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 

@@ -91,9 +91,9 @@
   <div class="sticky-container" id="home">
     <div id="anchor" class="sticky3">
       <canvas id="canvas"></canvas>
-      
+
       <img id="phone-bg" src="images/123.jpg"></img>
-      
+
       <section class="hero-section hero">
         <div class="container">
           <div class="row">
@@ -118,9 +118,8 @@
           <div class="container">
             <div class="row">
               <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="col-lg-12 text-center">
-                <h2 style="color:#ffffff"
-                  class="section-title">Collecty.</h2>
-                <div >
+                <h2 style="color:#ffffff" class="section-title">Collecty.</h2>
+                <div>
                   <p>
                     “World’s most prestige NFT incubator designed for high-level influencers, artists & brands” </p>
 
@@ -461,7 +460,7 @@
 
     btn.on('click', function (e) {
       e.preventDefault();
-      $('html, body').animate({ scrollTop: 0 }, '600');
+      $('html, body').animate({ scrollTop: 0 }, '0');
     });
 
     $(document).ready(function () {
@@ -484,53 +483,78 @@
 
   <script>
 
-    
-if (window.screen.width > 600) {
-  
-    var lastScrollTop = 0;
-    $(window).on('scroll', function () {
-      st = $(this).scrollTop();
-      if (st < lastScrollTop) {
 
-        if ($(this).scrollTop() > 6300 && $(this).scrollTop() < 6400) {
+    if (window.screen.width > 600) {
 
-          window.scrollTo({ top: 5600, behavior: 'smooth' });
+      var lastScrollTop = 0;
+      $(window).on('scroll', function () {
+        st = $(this).scrollTop();
+        if (st < lastScrollTop) {
+
+          if ($(this).scrollTop() > 6300 && $(this).scrollTop() < 6400) {
+
+            window.scrollTo({ top: 5600, behavior: 'smooth' });
+          }
+
+          if ($(this).scrollTop() > 2500 && $(this).scrollTop() < 2600) {
+
+            window.scrollTo({ top: 1740, behavior: 'smooth' });
+          }
+
+          if ($(this).scrollTop() > 1300 && $(this).scrollTop() < 1400) {
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+
         }
+        else {
 
-        if ($(this).scrollTop() > 2500 && $(this).scrollTop() < 2600) {
+          if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
 
-          window.scrollTo({ top: 1740, behavior: 'smooth' });
+            window.scrollTo({ top: 1600, behavior: 'smooth' });
+
+          }
+
+          if ($(this).scrollTop() > 850 && $(this).scrollTop() < 1379) {
+            
+          }
+
+          if ($(this).scrollTop() > 1380 && $(this).scrollTop() < 1780) {
+           
+          }
+
+          if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
+
+            window.scrollTo({ top: 2600, behavior: 'smooth' });
+          }
+
+          if ($(this).scrollTop() > 1800 && $(this).scrollTop() < 2599) {
+            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+          }
+
+          if ($(this).scrollTop() > 2600 && $(this).scrollTop() < 5750) {
+            //window.addEventListener("wheel", e => e.preventDefault(), { passive:true })
+          }
+
+          if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
+
+            window.scrollTo({ top: 6400, behavior: 'smooth' });
+          }
+
+          if ($(this).scrollTop() > 5750 && $(this).scrollTop() < 6399) {
+            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+          }
+
+          if ($(this).scrollTop() > 6400) {
+            //window.addEventListener("wheel", e => e.preventDefault(), { passive:true })
+          }
+
+
+
         }
-
-        if ($(this).scrollTop() > 1300 && $(this).scrollTop() < 1400) {
-
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-      }
-      else {
-
-        if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
-
-          window.scrollTo({ top: 1400, behavior: 'smooth' });
-        }
-
-        if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
-
-          window.scrollTo({ top: 2600, behavior: 'smooth' });
-        }
-
-        if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
-
-          window.scrollTo({ top: 6400, behavior: 'smooth' });
-        }
-
-
-
-      }
-      lastScrollTop = st;
-    });
-  }
+        lastScrollTop = st;
+      });
+    }
 
   </script>
 
@@ -538,7 +562,7 @@ if (window.screen.width > 600) {
     $(window).scroll(function () {
 
 
-      if ($(this).scrollTop() > 2550 && $(this).scrollTop() < 5800) {
+      if ($(this).scrollTop() > 2450 && $(this).scrollTop() < 5800) {
 
         $('#roadmapheader').fadeIn();
 
@@ -689,31 +713,31 @@ if (window.screen.width > 600) {
   </script>
 
   <script>
-    jQuery(document).ready(function($) {
-        		"use strict";
-        		//  TESTIMONIALS CAROUSEL HOOK
-		        $('#customers-testimonials').owlCarousel({
-		            loop: true,
-		            center: true,
-		            items: 3,
-		            margin: 0,
-		            autoplay: true,
-		            dots:true,
-		            autoplayTimeout: 8500,
-		            smartSpeed: 450,
-		            responsive: {
-		              0: {
-		                items: 1
-		              },
-		              768: {
-		                items: 2
-		              },
-		              1170: {
-		                items: 3
-		              }
-		            }
-		        });
-        	});
+    jQuery(document).ready(function ($) {
+      "use strict";
+      //  TESTIMONIALS CAROUSEL HOOK
+      $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots: true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+      });
+    });
   </script>
 
 </body>
