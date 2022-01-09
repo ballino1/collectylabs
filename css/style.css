@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 html {
-  
 }
 
 body {
@@ -70,6 +69,9 @@ h1,
   }
 
   #canvas {
+    visibility: hidden;
+  }
+  #canvas1 {
     visibility: hidden;
   }
 }
@@ -785,13 +787,11 @@ a:hover {
 }
 
 .team {
-  
   overflow: hidden;
   position: relative;
 }
 
 .team-slider {
-  
   overflow-y: visible;
   overflow-x: hidden;
   overflow: visible;
@@ -1520,16 +1520,12 @@ textarea.form-control {
   min-height: 700px;
 }
 #canvas1 {
-  padding: 0;
-  margin: auto;
-  display: block;
-
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  height: 100vh;
+  min-height: 700px;
 }
 
 .center {
@@ -2063,6 +2059,7 @@ a.animated-button:visited {
   margin-bottom: auto;
   position: absolute;
   margin-top: -50px;
+  z-index: 1;
 }
 
 .headershadow {
@@ -2078,19 +2075,15 @@ a.animated-button:visited {
 }
 
 #phone-bg {
-  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
   width: 100vw;
   min-height: 700px;
-  
 }
 
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
-
-

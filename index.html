@@ -61,14 +61,14 @@
         <div class="collapse navbar-collapse text-center" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="https://twitter.com/collectylabs" class="btn animated-button victoria-one"
+              <a href="https://twitter.com/collectylabs" target="_blank" class="btn animated-button victoria-one"
                 style="margin-top: 0;width: 40px; height: 40px; padding: 8px 8px 8px 8px;"><img
                   src="images/smallimg/twitter-xxl.png" height="100%" width="100%" /></a>
 
               <!--<a class="nav-link" href="index.html">Home</a>-->
             </li>
             <li class="nav-item">
-              <a href="https://discord.gg/collectylabs" class="btn btn-sm animated-button victoria-one"
+              <a href="https://discord.gg/collectylabs" target="_blank" class="btn btn-sm animated-button victoria-one"
                 style="margin-top: 0; width: 40px; height: 40px;  padding: 8px 8px 8px 8px;"><img
                   src="images/smallimg/discord.png" height="100%" width="100%" /></a>
 
@@ -97,7 +97,7 @@
       <section class="hero-section hero">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 text-center zindex-1">
+            <div class="col-lg-12 text-center zindex-1" id="collecty-header">
               <h1 style=" margin: 0 auto; position:relative;" class="heading-style textshadow">Collecty</h1>
               <h3 class="labsheader ralefont textshadow1">
                 L&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;S</h3>
@@ -110,14 +110,14 @@
   </div>
 
   <!-- aboutus -->
-  <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-center">
     <div class="sticky-container-about">
       <div class="stickyabout">
 
         <section class="section-lg pb-0 pricing" id="feature">
           <div class="container">
             <div class="row">
-              <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="col-lg-12 text-center">
+              <div class="col-lg-12 text-center" id="about-header">
                 <h2 style="color:#ffffff" class="section-title">Collecty.</h2>
                 <div>
                   <p>
@@ -140,21 +140,20 @@
 
   <!-- roadmap -->
 
+  <!-- feature -->
   <div class="container" id="roadmap">
-
     <div class="sticky-container-long">
-      <div class="sticky2">
-        <!-- feature -->
+      <div id="anchor1" class="sticky2">
         <section class="section-lg pb-0 pricing">
-
           <div class="row">
             <div class="col-lg-12 text-center">
-              <div class="text-center">
+              <div class="text-center" id="roadmap-header">
                 <div id="roadmapheader" class="center-roadmap-absolute">
                   <h2 style="position: absolute; color: #ffffff;" class="center-roadmap-absolute">Roadmap
                   </h2>
                 </div>
                 <br>
+                <div id="canvas1"></div>
                 <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="roadmap1"
                   style="position: absolute;" class="centerabsolute">
                   <h3 class="section-title">.01 <br>Launch of
@@ -205,103 +204,105 @@
 
   <!-- team -->
 
-  <div class="sticky-container-team">
+  <div class="sticky-container-team" data-aos="fade-up" data-aos-anchor-placement="center-center">
     <div class="sticky3">
-      <section data-aos="fade-up" data-aos-anchor-placement="top-top" class="section-lg team" id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="text-center">
-                <h2 class="section-title">Our Team</h2>
-                <p class="mb-100">Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu<br>
-                  fugiat nulla pariatur. Excepteur sint occaecat </p>
+      <section class="section-lg team" id="team">
+        <div id="team-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="text-center">
+                  <h2 class="section-title">Our Team</h2>
+                  <p class="mb-100">Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu<br>
+                    fugiat nulla pariatur. Excepteur sint occaecat </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-10 mx-auto">
-          <div class="team-slider">
+          <div class="col-10 mx-auto">
+            <div class="team-slider">
 
-            <!-- team-member -->
-            <div class="team-member">
-              <div class="d-flex mb-4">
-                <div class="mr-3">
-                  <img class="rounded-circle img-fluid" src="" alt="">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Becroft</h4>
+                    <h6 class="text-color">web designer</h6>
+                  </div>
                 </div>
-                <div class="align-self-center">
-                  <h4 class="text-color">Becroft</h4>
-                  <h6 class="text-color">web designer</h6>
-                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
               </div>
-              <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live the blind texts. S eparated they</p>
-            </div>
 
-            <!-- team-member -->
-            <div class="team-member">
-              <div class="d-flex mb-4">
-                <div class="mr-3">
-                  <img class="rounded-circle img-fluid" src="" alt="">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">John Doe</h4>
+                    <h6 class="text-color">web developer</h6>
+                  </div>
                 </div>
-                <div class="align-self-center">
-                  <h4 class="text-color">John Doe</h4>
-                  <h6 class="text-color">web developer</h6>
-                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
               </div>
-              <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live the blind texts. S eparated they</p>
-            </div>
 
-            <!-- team-member -->
-            <div class="team-member">
-              <div class="d-flex mb-4">
-                <div class="mr-3">
-                  <img class="rounded-circle img-fluid" src="" alt="">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Erik Ligas</h4>
+                    <h6 class="text-color">Programmer</h6>
+                  </div>
                 </div>
-                <div class="align-self-center">
-                  <h4 class="text-color">Erik Ligas</h4>
-                  <h6 class="text-color">Programmer</h6>
-                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live
+                  the blind texts. S eparated they</p>
               </div>
-              <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live
-                the blind texts. S eparated they</p>
-            </div>
 
-            <!-- team-member -->
-            <div class="team-member">
-              <div class="d-flex mb-4">
-                <div class="mr-3">
-                  <img class="rounded-circle img-fluid" src="" alt="">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">Erik Ligas</h4>
+                    <h6 class="text-color">Programmer</h6>
+                  </div>
                 </div>
-                <div class="align-self-center">
-                  <h4 class="text-color">Erik Ligas</h4>
-                  <h6 class="text-color">Programmer</h6>
-                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live
+                  the blind texts. S eparated they</p>
               </div>
-              <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live
-                the blind texts. S eparated they</p>
-            </div>
 
-            <!-- team-member -->
-            <div class="team-member">
-              <div class="d-flex mb-4">
-                <div class="mr-3">
-                  <img class="rounded-circle img-fluid" src="" alt="">
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div class="mr-3">
+                    <img class="rounded-circle img-fluid" src="" alt="">
+                  </div>
+                  <div class="align-self-center">
+                    <h4 class="text-color">John Doe</h4>
+                    <h6 class="text-color">web developer</h6>
+                  </div>
                 </div>
-                <div class="align-self-center">
-                  <h4 class="text-color">John Doe</h4>
-                  <h6 class="text-color">web developer</h6>
-                </div>
+                <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. S eparated they</p>
               </div>
-              <p class="text-color">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live the blind texts. S eparated they</p>
             </div>
           </div>
+          <img src="" alt="" class="img-fluid team-bg">
         </div>
-        <img src="" alt="" class="img-fluid team-bg">
       </section>
     </div>
   </div>
@@ -343,18 +344,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 5px;">
-          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
             <a href="#">Collecty Labs</a>.
           </p>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
-            <li><a class="twitter" href="https://twitter.com/collectylabs"><img src="images/smallimg/twitter-xxl.png"
-                  height="50%" width="50%" /></a>
+            <li><a class="twitter" href="https://twitter.com/collectylabs" target="_blank"><img
+                  src="images/smallimg/twitter-xxl.png" height="50%" width="50%" /></a>
             </li>
-            <li><a class="discord" href="https://discord.gg/collectylabs"><img src="images/smallimg/discord.png"
-                  height="50%" width="50%" /></a></li>
+            <li><a class="discord" href="https://discord.gg/collectylabs" target="_blank"><img
+                  src="images/smallimg/discord.png" height="50%" width="50%" /></a></li>
           </ul>
         </div>
       </div>
@@ -383,65 +384,76 @@
   <script src="js/frameByFrame.js"></script>
 
   <script>
-    window.onload = function () {
-      $("#canvas").frameByFrame(
-        [
-          [0, 800],
-          [0, 72]
-        ],
-        {
-          canvasWidth: 2560,
-          canvasHeight: 1080,
-          canvasImagesPath: "bgframe/",
-          canvasImagesFormat: ".jpg",
-          frameCount: 72,
-          anchor: "#anchor"
+    if (window.screen.width > 600) {
+      window.onload = function () {
+        $("#canvas").frameByFrame(
+          [
+            [0, 800],
+            [0, 72]
+          ],
+          {
+            canvasWidth: 2560,
+            canvasHeight: 1080,
+            canvasImagesPath: "bgframe/",
+            canvasImagesFormat: ".jpg",
+            frameCount: 72,
+            anchor: "#anchor"
+          }
+        );
+      }
+    }
+
+  </script>
+
+
+  <script>
+    if (window.screen.width > 600) {
+
+      var $aContainer = document.getElementById("canvas1");
+      var aContainerRect = $aContainer.getBoundingClientRect();
+      var start = aContainerRect.top + 2600;
+      var length = aContainerRect.height + 2000;
+      scrollAnimate({
+        frames: {
+          path: "frame/",
+          prefix: "frame_",
+          extension: "jpg",
+          amount: 41,
+          pad: "00"
+        },
+        parent: $aContainer,
+        scroll: {
+          start: start,
+          length: length
         }
-      );
-    };
-  </script>
-
-
-  <script>
-    var $aContainer = document.getElementById("animation-bg-container");
-    var aContainerRect = $aContainer.getBoundingClientRect();
-    var start = aContainerRect.top;
-    var length = aContainerRect.height + 500;
-    scrollAnimate({
-      frames: {
-        path: "bgframe/",
-        prefix: "",
-        extension: "jpg",
-        amount: 71,
-        pad: "0"
-      },
-      parent: $aContainer,
-      scroll: {
-        start: start,
-        length: length
-      }
-    });
+      });
+    }
   </script>
 
   <script>
-    var $aContainer1 = document1.getElementById("animation-container");
-    var aContainerRect = $aContainer.getBoundingClientRect();
-    var start = aContainerRect.top;
-    var length = aContainerRect.height + 100;
-    scrollAnimate({
-      frames: {
-        path: "bgframe/",
-        prefix: "",
-        extension: "jpg",
-        amount: 71,
-        pad: "0"
-      },
-      parent: $aContainer,
-      scroll: {
-        start: start,
-        length: length
+    $(window).scroll(function () {
+      if ($(this).scrollTop() < 1000) {
+        $('#canvas').fadeIn();
+
+      }
+
+      if ($(this).scrollTop() < 2550) {
+        $('#canvas1').fadeOut();
+
+      }
+
+      if ($(this).scrollTop() > 2550 && $(this).scrollTop() < 5650) {
+        $('#canvas').fadeOut();
+        $('#canvas1').fadeIn();
+
+      }
+      if ($(this).scrollTop() > 5650) {
+        $('#canvas').fadeOut();
+        $('#canvas1').fadeOut();
+
       }
     });
+
   </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -466,19 +478,6 @@
     $(document).ready(function () {
       $('#nav').onePageNav();
     });
-  </script>
-
-  <script>
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 1000) {
-        $('#canvas').fadeOut();
-        $('#phone-bg').fadeOut();
-      } else {
-        $('#canvas').fadeIn();
-        $('#phone-bg').fadeIn();
-      }
-    });
-
   </script>
 
   <script>
@@ -511,16 +510,16 @@
 
           if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
 
-            window.scrollTo({ top: 1600, behavior: 'smooth' });
+            window.scrollTo({ top: 1400, behavior: 'smooth' });
 
           }
 
           if ($(this).scrollTop() > 850 && $(this).scrollTop() < 1379) {
-            
+            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false });
           }
 
           if ($(this).scrollTop() > 1380 && $(this).scrollTop() < 1780) {
-           
+            // window.removeEventListeners("wheel", e => e.preventDefault(), { capture:false });
           }
 
           if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
@@ -556,9 +555,25 @@
       });
     }
 
+
   </script>
 
   <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1000) {
+
+        $('#phone-bg').fadeOut();
+
+      } else {
+
+        $('#phone-bg').fadeIn();
+      }
+    });
+
+  </script>
+
+  <script>
+
     $(window).scroll(function () {
 
 
@@ -577,10 +592,8 @@
 
   <script>
     $(window).scroll(function () {
-
-
-      if ($(this).scrollTop() < 2900) {
-        $('#roadmap1').fadeIn();
+      if ($(this).scrollTop() < 2460) {
+        $('#roadmap1').fadeOut();
         $('#roadmap2').fadeOut();
         $('#roadmap3').fadeOut();
         $('#roadmap4').fadeOut();
@@ -590,92 +603,106 @@
 
       } else {
 
-        if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
-          $('#roadmap1').fadeOut();
+        if ($(this).scrollTop() < 2900) {
+          $('#roadmap1').fadeIn();
+          $('#roadmap2').fadeOut();
+          $('#roadmap3').fadeOut();
+          $('#roadmap4').fadeOut();
+          $('#roadmap5').fadeOut();
+          $('#roadmap6').fadeOut();
 
 
-        }
-        else {
-          if ($(this).scrollTop() > 3100 && $(this).scrollTop() < 3500) {
+        } else {
+
+          if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
             $('#roadmap1').fadeOut();
-            $('#roadmap2').fadeIn();
-            $('#roadmap3').fadeOut();
-            $('#roadmap4').fadeOut();
-            $('#roadmap5').fadeOut();
-            $('#roadmap6').fadeOut();
 
 
           }
           else {
-            if ($(this).scrollTop() > 3500 && $(this).scrollTop() < 3700) {
-              $('#roadmap2').fadeOut();
+            if ($(this).scrollTop() > 3100 && $(this).scrollTop() < 3500) {
+              $('#roadmap1').fadeOut();
+              $('#roadmap2').fadeIn();
+              $('#roadmap3').fadeOut();
+              $('#roadmap4').fadeOut();
+              $('#roadmap5').fadeOut();
+              $('#roadmap6').fadeOut();
+
+
             }
             else {
-              if ($(this).scrollTop() > 3700 && $(this).scrollTop() < 4100) {
-
-                $('#roadmap3').fadeIn();
+              if ($(this).scrollTop() > 3500 && $(this).scrollTop() < 3700) {
                 $('#roadmap2').fadeOut();
-                $('#roadmap1').fadeOut();
-                $('#roadmap4').fadeOut();
-                $('#roadmap5').fadeOut();
-                $('#roadmap6').fadeOut();
-
-
               }
               else {
-                if ($(this).scrollTop() > 4100 && $(this).scrollTop() < 4200) {
-                  $('#roadmap3').fadeOut();
-                } else {
-                  if ($(this).scrollTop() > 4200 && $(this).scrollTop() < 4600) {
+                if ($(this).scrollTop() > 3700 && $(this).scrollTop() < 4100) {
 
-                    $('#roadmap4').fadeIn();
-                    $('#roadmap2').fadeOut();
+                  $('#roadmap3').fadeIn();
+                  $('#roadmap2').fadeOut();
+                  $('#roadmap1').fadeOut();
+                  $('#roadmap4').fadeOut();
+                  $('#roadmap5').fadeOut();
+                  $('#roadmap6').fadeOut();
+
+
+                }
+                else {
+                  if ($(this).scrollTop() > 4100 && $(this).scrollTop() < 4200) {
                     $('#roadmap3').fadeOut();
-                    $('#roadmap1').fadeOut();
-                    $('#roadmap5').fadeOut();
-                    $('#roadmap6').fadeOut();
-
-
-
                   } else {
-                    if ($(this).scrollTop() > 4600 && $(this).scrollTop() < 4800) {
-                      $('#roadmap4').fadeOut();
-                    }
-                    else {
-                      if ($(this).scrollTop() > 4800 && $(this).scrollTop() < 5200) {
+                    if ($(this).scrollTop() > 4200 && $(this).scrollTop() < 4600) {
 
-                        $('#roadmap5').fadeIn();
-                        $('#roadmap2').fadeOut();
-                        $('#roadmap1').fadeOut();
+                      $('#roadmap4').fadeIn();
+                      $('#roadmap2').fadeOut();
+                      $('#roadmap3').fadeOut();
+                      $('#roadmap1').fadeOut();
+                      $('#roadmap5').fadeOut();
+                      $('#roadmap6').fadeOut();
+
+
+
+                    } else {
+                      if ($(this).scrollTop() > 4600 && $(this).scrollTop() < 4800) {
                         $('#roadmap4').fadeOut();
-                        $('#roadmap3').fadeOut();
-                        $('#roadmap6').fadeOut();
-
-
                       }
                       else {
-                        if ($(this).scrollTop() > 5200 && $(this).scrollTop() < 5400) {
-                          $('#roadmap5').fadeOut();
-                        } else {
-                          if ($(this).scrollTop() > 5400 && $(this).scrollTop() < 5800) {
+                        if ($(this).scrollTop() > 4800 && $(this).scrollTop() < 5200) {
 
-                            $('#roadmap6').fadeIn();
-                            $('#roadmap2').fadeOut();
-                            $('#roadmap3').fadeOut();
-                            $('#roadmap1').fadeOut();
+                          $('#roadmap5').fadeIn();
+                          $('#roadmap2').fadeOut();
+                          $('#roadmap1').fadeOut();
+                          $('#roadmap4').fadeOut();
+                          $('#roadmap3').fadeOut();
+                          $('#roadmap6').fadeOut();
+
+
+                        }
+                        else {
+                          if ($(this).scrollTop() > 5200 && $(this).scrollTop() < 5400) {
                             $('#roadmap5').fadeOut();
-                            $('#roadmap4').fadeOut();
-
-
-
                           } else {
-                            if ($(this).scrollTop() > 5800) {
-                              $('#roadmap6').fadeOut();
+
+                            if ($(this).scrollTop() > 5400 && $(this).scrollTop() < 5800) {
+
+                              $('#roadmap6').fadeIn();
+                              $('#roadmap2').fadeOut();
+                              $('#roadmap3').fadeOut();
+                              $('#roadmap1').fadeOut();
+                              $('#roadmap5').fadeOut();
+                              $('#roadmap4').fadeOut();
+
+
 
                             } else {
 
+                              if ($(this).scrollTop() > 5800) {
+                                $('#roadmap6').fadeOut();
+
+                              }
+
                             }
                           }
+
                         }
                       }
                     }
@@ -699,10 +726,10 @@
     }
   </script>
 
-
   <script>
     $(window).on("load", function () {
       $(".loader-wrapper").fadeOut();
+      $('#canvas1').hide();
     });
   </script>
 
