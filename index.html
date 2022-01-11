@@ -483,7 +483,7 @@
   <script>
 
 
-    if (window.screen.width > 600) {
+    if (window.screen.width > 99600) {
 
       var lastScrollTop = 0;
       $(window).on('scroll', function () {
@@ -510,7 +510,10 @@
 
           if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
 
-            window.scrollTo({ top: 1400, behavior: 'smooth' });
+            //window.scrollTo({ top: 1400, behavior: 'smooth' });
+
+            window.animate({scrollTop: 1400});
+
 
           }
 
@@ -525,6 +528,7 @@
           if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
 
             window.scrollTo({ top: 2600, behavior: 'smooth' });
+
           }
 
           if ($(this).scrollTop() > 1800 && $(this).scrollTop() < 2599) {
@@ -538,6 +542,7 @@
           if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
 
             window.scrollTo({ top: 6400, behavior: 'smooth' });
+
           }
 
           if ($(this).scrollTop() > 5750 && $(this).scrollTop() < 6399) {
@@ -577,13 +582,12 @@
     $(window).scroll(function () {
 
 
-      if ($(this).scrollTop() > 2450 && $(this).scrollTop() < 5800) {
-
-        $('#roadmapheader').fadeIn();
-
+      if ($(this).scrollTop() > 2260 && $(this).scrollTop() < 5800) {
+        $('#roadmap-header').fadeIn();
+        
       }
       else {
-        $('#roadmapheader').fadeOut();
+        $('#roadmap-header').fadeOut();
       }
     });
 
@@ -593,7 +597,7 @@
   <script>
     $(window).scroll(function () {
       if ($(this).scrollTop() < 2460) {
-        $('#roadmap1').fadeOut();
+        
         $('#roadmap2').fadeOut();
         $('#roadmap3').fadeOut();
         $('#roadmap4').fadeOut();
@@ -604,6 +608,7 @@
       } else {
 
         if ($(this).scrollTop() < 2900) {
+         
           $('#roadmap1').fadeIn();
           $('#roadmap2').fadeOut();
           $('#roadmap3').fadeOut();

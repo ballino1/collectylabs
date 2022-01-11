@@ -1468,6 +1468,7 @@ textarea.form-control {
 .sticky3 {
   position: sticky;
   top: 0px;
+  margin-top: -250px;
   text-align: center;
   background-color: transparent;
 }
