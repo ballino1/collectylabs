@@ -1527,7 +1527,7 @@ textarea.form-control {
   transform: translate(-50%, -50%);
   position: fixed;
   height: 100vh;
-  min-height: 700px;
+  min-height: 1080px;
 }
 
 .center {
