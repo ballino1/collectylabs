@@ -1447,11 +1447,11 @@ textarea.form-control {
   background-color: transparent;
 }
 .sticky-container-long {
-  height: 3500px;
+  height: 3900px;
   background-color: transparent;
 }
 .sticky-container-team {
-  height: 1600px;
+  height: 2000px;
   background-color: transparent;
 }
 .sticky {
@@ -1469,7 +1469,7 @@ textarea.form-control {
 .sticky3 {
   position: sticky;
   top: 0px;
-  margin-top: -250px;
+  margin-top: -450px;
   text-align: center;
   background-color: transparent;
 }
@@ -2075,6 +2075,15 @@ a.animated-button:visited {
 .textshadow1 {
   text-shadow: 3px 3px 10px #000000, -2px 1px 30px #000000;
 }
+
+
+@media screen and (min-width: 601px) {
+ 
+.textshadow2 {
+  text-shadow: 3px 3px 20px #000000, -2px 10px 80px #000000;
+}
+}
+
 
 #phone-bg {
   top: 50%;

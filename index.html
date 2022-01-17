@@ -5,11 +5,8 @@
   <meta charset="utf-8">
   <title>Collecty Labs | World’s most prestige NFT</title>
 
-  <!-- mobile responsive meta -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <!-- themefy-icon -->
@@ -149,44 +146,44 @@
             <div class="col-lg-12 text-center">
               <div class="text-center" id="roadmap-header">
                 <div id="roadmapheader" class="center-roadmap-absolute">
-                  <h2 style="position: absolute; color: #ffffff;" class="center-roadmap-absolute">Roadmap
+                  <h2 style="position: absolute; color: #ffffff;" class="center-roadmap-absolute textshadow2">Roadmap
                   </h2>
                 </div>
                 <br>
                 <div id="canvas1"></div>
                 <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="roadmap1"
-                  style="position: absolute;" class="centerabsolute">
+                  style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.01 <br>Launch of
                     Collecty‘s native NFTs
                   </h3>
                   <p class="mb-100">Intended to become
                     the special ticket system for future releases...
                 </div>
-                <div id="roadmap2" style="position: absolute;" class="centerabsolute">
+                <div id="roadmap2" style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.02<br>
                     Collaboration with high-level influencers & brands
                   </h3>
                   <p class="mb-100">...Releasing limited edition NFTs with maximized utility.</p>
                 </div>
-                <div id="roadmap3" style="position: absolute;" class="centerabsolute">
+                <div id="roadmap3" style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.03 <br>NFT goes
                     DeFi
                   </h3>
                   <p class="mb-100">Our native NFT will become your passive income generator.</p>
                 </div>
-                <div id="roadmap4" style="position: absolute;" class="centerabsolute">
+                <div id="roadmap4" style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.04 <br>Launch of
                     Collecty‘s official digital art gallery <br>in the metaverse
                   </h3>
                   <p class="mb-100"></p>
                 </div>
-                <div id="roadmap5" style="position: absolute;" class="centerabsolute">
+                <div id="roadmap5" style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.05<br>
                     Partnership with metaverse developers <br>for Digital Real Estate
                   </h3>
                   <p class="mb-100"></p>
                 </div>
-                <div id="roadmap6" style="position: absolute;" class="centerabsolute">
+                <div id="roadmap6" style="position: absolute;" class="centerabsolute textshadow2">
                   <h3 class="section-title">.06 <br>Auction
                     sales for special asset-backed NFTs
 
@@ -377,11 +374,13 @@
   <!-- aos -->
   <script src="plugins/aos/aos.js"></script>
   <!-- Main Script -->
-  <script src="js/script.js"></script>
+  <script src="dist/script.js"></script>
+  <!-- FrameByFrame -->
+  <script src="dist/frameByFrame.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script src="/path/to/cdn/jquery.slim.min.js"></script>
-
-  <script src="js/frameByFrame.js"></script>
+  <script>AOS.init();</script>
 
   <script>
     if (window.screen.width > 600) {
@@ -394,7 +393,7 @@
           {
             canvasWidth: 2560,
             canvasHeight: 1080,
-            canvasImagesPath: "bgframe/",
+            canvasImagesPath: "images/backgrounds/bgframe/",
             canvasImagesFormat: ".jpg",
             frameCount: 72,
             anchor: "#anchor"
@@ -402,7 +401,6 @@
         );
       }
     }
-
   </script>
 
 
@@ -411,11 +409,11 @@
 
       var $aContainer = document.getElementById("canvas1");
       var aContainerRect = $aContainer.getBoundingClientRect();
-      var start = aContainerRect.top + 2600;
-      var length = aContainerRect.height + 2000;
+      var start = aContainerRect.top + 2250;
+      var length = aContainerRect.height + 2350;
       scrollAnimate({
         frames: {
-          path: "framees/",
+          path: "images/backgrounds/rmframee/",
           prefix: "frame_",
           extension: "jpg",
           amount: 74,
@@ -434,30 +432,23 @@
     $(window).scroll(function () {
       if ($(this).scrollTop() < 1000) {
         $('#canvas').fadeIn();
-
       }
 
-      if ($(this).scrollTop() < 2550) {
+      if ($(this).scrollTop() < 2250) {
         $('#canvas1').fadeOut();
-
       }
 
-      if ($(this).scrollTop() > 2550 && $(this).scrollTop() < 5650) {
+      if ($(this).scrollTop() > 2250 && $(this).scrollTop() < 6000) {
         $('#canvas').fadeOut();
         $('#canvas1').fadeIn();
-
       }
-      if ($(this).scrollTop() > 5650) {
+      if ($(this).scrollTop() > 6000) {
         $('#canvas').fadeOut();
         $('#canvas1').fadeOut();
-
       }
     });
 
   </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
 
   <script>
     var btn = $('#button');
@@ -481,145 +472,78 @@
   </script>
 
   <script>
-
-
     if (window.screen.width > 99600) {
 
       var lastScrollTop = 0;
       $(window).on('scroll', function () {
         st = $(this).scrollTop();
         if (st < lastScrollTop) {
-
           if ($(this).scrollTop() > 6300 && $(this).scrollTop() < 6400) {
-
             window.scrollTo({ top: 5600, behavior: 'smooth' });
           }
-
           if ($(this).scrollTop() > 2500 && $(this).scrollTop() < 2600) {
-
             window.scrollTo({ top: 1740, behavior: 'smooth' });
           }
-
           if ($(this).scrollTop() > 1300 && $(this).scrollTop() < 1400) {
-
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
-
         }
         else {
-
           if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
-
             window.scrollTo({ top: 1400, behavior: 'smooth' });
-
           }
-
-          if ($(this).scrollTop() > 850 && $(this).scrollTop() < 1379) {
-            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false });
-          }
-
-          if ($(this).scrollTop() > 1380 && $(this).scrollTop() < 1780) {
-            // window.removeEventListeners("wheel", e => e.preventDefault(), { capture:false });
-          }
-
           if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
-
             window.scrollTo({ top: 2600, behavior: 'smooth' });
-
           }
-
-          if ($(this).scrollTop() > 1800 && $(this).scrollTop() < 2599) {
-            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
-          }
-
-          if ($(this).scrollTop() > 2600 && $(this).scrollTop() < 5750) {
-            //window.addEventListener("wheel", e => e.preventDefault(), { passive:true })
-          }
-
           if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
-
             window.scrollTo({ top: 6400, behavior: 'smooth' });
-
           }
-
-          if ($(this).scrollTop() > 5750 && $(this).scrollTop() < 6399) {
-            //window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
-          }
-
-          if ($(this).scrollTop() > 6400) {
-            //window.addEventListener("wheel", e => e.preventDefault(), { passive:true })
-          }
-
-
-
         }
         lastScrollTop = st;
       });
     }
-
-
   </script>
 
   <script>
     $(window).scroll(function () {
       if ($(this).scrollTop() > 1000) {
-
         $('#phone-bg').fadeOut();
-
       } else {
-
         $('#phone-bg').fadeIn();
       }
     });
-
   </script>
 
   <script>
-
     $(window).scroll(function () {
-
-
-      if ($(this).scrollTop() > 2260 && $(this).scrollTop() < 5800) {
+      if ($(this).scrollTop() > 2260 && $(this).scrollTop() < 6000) {
         $('#roadmap-header').fadeIn();
-        
       }
       else {
         $('#roadmap-header').fadeOut();
       }
     });
-
-
   </script>
 
   <script>
     $(window).scroll(function () {
       if ($(this).scrollTop() < 2460) {
-        
         $('#roadmap2').fadeOut();
         $('#roadmap3').fadeOut();
         $('#roadmap4').fadeOut();
         $('#roadmap5').fadeOut();
         $('#roadmap6').fadeOut();
-
-
       } else {
-
         if ($(this).scrollTop() < 2900) {
-         
           $('#roadmap1').fadeIn();
           $('#roadmap2').fadeOut();
           $('#roadmap3').fadeOut();
           $('#roadmap4').fadeOut();
           $('#roadmap5').fadeOut();
           $('#roadmap6').fadeOut();
-
-
         } else {
-
           if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
             $('#roadmap1').fadeOut();
-
-
           }
           else {
             if ($(this).scrollTop() > 3100 && $(this).scrollTop() < 3500) {
@@ -629,8 +553,6 @@
               $('#roadmap4').fadeOut();
               $('#roadmap5').fadeOut();
               $('#roadmap6').fadeOut();
-
-
             }
             else {
               if ($(this).scrollTop() > 3500 && $(this).scrollTop() < 3700) {
@@ -638,73 +560,54 @@
               }
               else {
                 if ($(this).scrollTop() > 3700 && $(this).scrollTop() < 4100) {
-
                   $('#roadmap3').fadeIn();
                   $('#roadmap2').fadeOut();
                   $('#roadmap1').fadeOut();
                   $('#roadmap4').fadeOut();
                   $('#roadmap5').fadeOut();
                   $('#roadmap6').fadeOut();
-
-
                 }
                 else {
                   if ($(this).scrollTop() > 4100 && $(this).scrollTop() < 4200) {
                     $('#roadmap3').fadeOut();
                   } else {
                     if ($(this).scrollTop() > 4200 && $(this).scrollTop() < 4600) {
-
                       $('#roadmap4').fadeIn();
                       $('#roadmap2').fadeOut();
                       $('#roadmap3').fadeOut();
                       $('#roadmap1').fadeOut();
                       $('#roadmap5').fadeOut();
                       $('#roadmap6').fadeOut();
-
-
-
                     } else {
                       if ($(this).scrollTop() > 4600 && $(this).scrollTop() < 4800) {
                         $('#roadmap4').fadeOut();
                       }
                       else {
                         if ($(this).scrollTop() > 4800 && $(this).scrollTop() < 5200) {
-
                           $('#roadmap5').fadeIn();
                           $('#roadmap2').fadeOut();
                           $('#roadmap1').fadeOut();
                           $('#roadmap4').fadeOut();
                           $('#roadmap3').fadeOut();
                           $('#roadmap6').fadeOut();
-
-
                         }
                         else {
                           if ($(this).scrollTop() > 5200 && $(this).scrollTop() < 5400) {
                             $('#roadmap5').fadeOut();
                           } else {
-
-                            if ($(this).scrollTop() > 5400 && $(this).scrollTop() < 5800) {
-
+                            if ($(this).scrollTop() > 5400 && $(this).scrollTop() < 6000) {
                               $('#roadmap6').fadeIn();
                               $('#roadmap2').fadeOut();
                               $('#roadmap3').fadeOut();
                               $('#roadmap1').fadeOut();
                               $('#roadmap5').fadeOut();
                               $('#roadmap4').fadeOut();
-
-
-
                             } else {
-
-                              if ($(this).scrollTop() > 5800) {
+                              if ($(this).scrollTop() > 6000) {
                                 $('#roadmap6').fadeOut();
-
                               }
-
                             }
                           }
-
                         }
                       }
                     }
@@ -716,7 +619,6 @@
         }
       }
     });
-
   </script>
 
   <script>if (history.scrollRestoration) {
@@ -736,15 +638,8 @@
   </script>
 
   <script>
-    var canvas = document.getElementById('responsive-canvas');
-    var heightRatio = 1.5;
-    canvas.height = canvas.width * heightRatio;
-  </script>
-
-  <script>
     jQuery(document).ready(function ($) {
       "use strict";
-      //  TESTIMONIALS CAROUSEL HOOK
       $('#customers-testimonials').owlCarousel({
         loop: true,
         center: true,
@@ -768,7 +663,5 @@
       });
     });
   </script>
-
 </body>
-
 </html>
