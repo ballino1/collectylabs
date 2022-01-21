@@ -56,6 +56,10 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
+.rmtext{
+  font-size: 50px;
+}
+
 @media screen and (min-width: 601px) {
   #phone-bg {
     visibility: hidden;
@@ -88,11 +92,12 @@ h1,
   .labsheader{
     font-size: 40px;
   }
+  .rmtext{
+    font-size: 38px;
+  }
 }
 
-.rmtext{
-  font-size: 50px;
-}
+
 
 svg {
   display: block;
@@ -132,7 +137,6 @@ text {
 @media screen and (max-width: 600px) {
   h3 {
     margin-top: -30px;
-   
   }
 
 }
