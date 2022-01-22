@@ -56,9 +56,15 @@ h1,
   font-family: "Raleway", sans-serif;
 }
 
-.rmtext{
+.rmtext {
   font-size: 50px;
 }
+
+.labswave {
+  margin-top: -130px;
+  position:relative;
+}
+
 
 @media screen and (min-width: 601px) {
   #phone-bg {
@@ -68,12 +74,26 @@ h1,
 
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 9vw;
+    font-size: 120px;
+  }
+  .labsheader {
+    margin-top: -60px;
+    font-size: 35px;
+  }
+
+  .labswave {
+    margin-top: -90px;
+    width: 600px;
+  }
 }
-.labsheader {
-  font-size: 3vw;
+
+@media screen and (min-width: 601px) {
+  .labswave {
+    margin-top: -90px;
+    width: 500px;
+  }
 }
-}
+
 
 @media screen and (max-width: 600px) {
   h1 {
@@ -89,17 +109,21 @@ h1,
     visibility: hidden;
   }
 
-  .labsheader{
-    font-size: 40px;
+  .labsheader {
+    margin-top: -50px;
+    font-size: 30px;
   }
-  .rmtext{
+  .rmtext {
     font-size: 38px;
   }
+
 }
 
-
-
 svg {
+  
+}
+
+.uparrow {
   display: block;
   margin: auto;
   font-weight: bold;
@@ -123,11 +147,9 @@ text {
   position: relative;
 }
 
-
 @media screen and (min-width: 601px) {
   h3 {
     margin-top: -50px;
-    
   }
   .smalltext {
     font-size: 65px;
@@ -138,7 +160,6 @@ text {
   h3 {
     margin-top: -30px;
   }
-
 }
 
 h4,
@@ -980,78 +1001,6 @@ a:hover {
   transform: scale(1.2);
 }
 
-/* service page */
-.service-bg-image {
-  background-size: containe;
-  background-repeat: no-repeat;
-  background-position: center 400px;
-}
-
-.service-bg-1 {
-  position: absolute;
-  left: 50px;
-  top: 10%;
-  z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .service-bg-1 {
-    display: none;
-  }
-}
-
-.service-bg-2 {
-  position: absolute;
-  right: 50px;
-  top: 10%;
-  z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .service-bg-2 {
-    display: none;
-  }
-}
-
-.service-bg-3 {
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .service-bg-3 {
-    display: none;
-  }
-}
-
-.service-bg-4 {
-  position: absolute;
-  left: 50px;
-  bottom: 30%;
-  z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .service-bg-4 {
-    display: none;
-  }
-}
-
-.service-bg-5 {
-  position: absolute;
-  left: 10%;
-  bottom: 5%;
-  z-index: -1;
-}
-
-@media (max-width: 767px) {
-  .service-bg-5 {
-    display: none;
-  }
-}
-
 .about {
   position: relative;
   overflow: visible;
@@ -1559,7 +1508,6 @@ textarea.form-control {
   transform: translate(-50%, -50%);
 }
 
-
 .example2 {
   height: 250px;
   overflow: hidden;
@@ -1585,7 +1533,6 @@ textarea.form-control {
     transform: translateY(0%);
   }
 }
-
 
 a.animated-button.victoria-one {
   border: 2px solid #4ffec5;
@@ -2091,14 +2038,11 @@ a.animated-button:visited {
   text-shadow: 3px 3px 10px #000000, -2px 1px 30px #000000;
 }
 
-
 @media screen and (min-width: 601px) {
- 
-.textshadow2 {
-  text-shadow: 3px 3px 20px #000000, -2px 10px 80px #000000;
+  .textshadow2 {
+    text-shadow: 3px 3px 20px #000000, -2px 10px 80px #000000;
+  }
 }
-}
-
 
 #phone-bg {
   top: 50%;

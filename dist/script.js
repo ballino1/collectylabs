@@ -14,8 +14,8 @@
   $('.team-slider').slick({
     dots: false,
     infinite: false,
-    speed: 1000,
-    autoplay: true,
+    speed: 500,
+    autoplay: false,
     autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,

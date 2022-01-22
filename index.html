@@ -11,8 +11,6 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
   <!-- slick slider -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- aos -->
@@ -26,7 +24,6 @@
   <link rel="shortcut icon" sizes="128x128" href="images/logo.png">
 
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <script src="dist/scrollAnimate.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script> AOS.init();</script>
 
@@ -39,17 +36,16 @@
 <body>
 
   <a id="button" style="align-content: center;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <svg class="uparrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
     </svg>
   </a>
 
- 
   <!-- hero area -->
 
   <div class="sticky-container" id="home">
     <div id="anchor" class="sticky3">
-       <!-- navigation -->
+      <!-- navigation -->
       <section class="fixed-top navigation" style="position: relative !important;">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-dark">
@@ -67,7 +63,8 @@
                       src="images/smallimg/twitter-xxl.png" height="100%" width="100%" /></a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://discord.gg/collectylabs" target="_blank" class="btn btn-sm animated-button victoria-one"
+                  <a href="https://discord.gg/collectylabs" target="_blank"
+                    class="btn btn-sm animated-button victoria-one"
                     style="margin-top: 0; width: 40px; height: 40px;  padding: 8px 8px 8px 8px;"><img
                       src="images/smallimg/discord.png" height="100%" width="100%" /></a>
                 </li>
@@ -85,12 +82,28 @@
           <div class="row">
             <div class="col-lg-12 text-center zindex-1" id="collecty-header">
               <h1 style="position:relative;" class="heading-style textshadow">Collecty</h1>
-              <h3 class="labsheader ralefont textshadow1">
-                L&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;S</h3>
+              <svg class="labswave" viewbox="0 0 100 20">
+                <defs>
+                  <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                  </linearGradient>
+                  <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                      mask="url(#mask)" fill="url(#gradient)">
+                      <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0"
+                        to="40,0" repeatCount="indefinite" />
+                    </path>
+                  </pattern>
+                </defs>
+                <text class="labstext" text-anchor="middle" x="50" y="14" font-size="9" fill="#fff"
+                  fill-opacity="1">LABS</text>
+                <text class="labstext" text-anchor="middle" x="50" y="14" font-size="9" fill="url(#wave)"
+                  fill-opacity="1">LABS</text>
+              </svg>
             </div>
           </div>
         </div>
-        
       </section>
     </div>
   </div>
@@ -128,9 +141,11 @@
   <!-- /aboutus -->
 
   <!-- roadmap -->
+
   <canvas id="canvas1"></canvas>
-  <div class="container" id="roadmap">
-    <div class="sticky-container-long">
+  <div class="container">
+    <div class="sticky-container-long" id="roadmap">
+      <div style="margin-top: 200px;" id="roadmaphref"></div>
       <div id="anchor1" class="sticky2">
         <section class="section-lg pb-0 pricing">
           <div class="row">
@@ -213,11 +228,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Selman Gultekin</h4>
-                    <h6 class="text-color">CEO , Co-Founder</h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Selman Gultekin</h4>
+                      <h6 class="text-color">CEO , Co-Founder</h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -226,11 +241,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Bahadır Balli</h4>
-                    <h6 class="text-color">CTO, Co-Founder</h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Bahadır Balli</h4>
+                      <h6 class="text-color">CTO, Co-Founder</h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -239,11 +254,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Aleyna Kocak</h4>
-                    <h6 class="text-color">Project Engineer </h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Aleyna Kocak</h4>
+                      <h6 class="text-color">Project Engineer </h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -252,11 +267,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Melisa Ozyurek</h4>
-                    <h6 class="text-color">Art Director</h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Melisa Ozyurek</h4>
+                      <h6 class="text-color">Art Director</h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -265,11 +280,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Tuba </h4>
-                    <h6 class="text-color">Designer</h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Tuba </h4>
+                      <h6 class="text-color">Designer</h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -278,11 +293,11 @@
               <div class="team-member">
                 <div class="d-flex mb-4">
                   <div style="margin: 0 auto;">
-                  <div class="align-self-center">
-                    <h4 class="text-color">Arca </h4>
-                    <h6 class="text-color">Designer</h6>
+                    <div class="align-self-center">
+                      <h4 class="text-color">Arca </h4>
+                      <h6 class="text-color">Designer</h6>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <p class="text-color"></p>
               </div>
@@ -294,8 +309,8 @@
     </div>
   </div>
 
-
   <!-- Site footer -->
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -319,7 +334,7 @@
           <ul class="footer-links">
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#feature">About Us</a></li>
-            <li><a class="nav-link" href="#roadmap">RoadMap</a></li>
+            <li><a class="nav-link" href="#roadmaphref">RoadMap</a></li>
             <li><a class="nav-link" href="#team">Team</a></li>
           </ul>
         </div>
@@ -329,12 +344,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 5px;">
-          <p class="copyright-text">Copyright &copy; 2022 <a href="#" style="color: #ffffff;">Collecty Labs Inc.</a>  All Rights Reserved.
+          <p class="copyright-text">Copyright &copy; 2022 <a href="#" style="color: #ffffff;">Collecty Labs Inc.</a> All
+            Rights Reserved.
           </p>
         </div>
-
         <div class="col-md-4 col-sm-6 col-xs-12">
-          
           <ul class="social-icons">
             <li><a class="twitter" href="https://twitter.com/collectylabs" target="_blank"><img
                   src="images/smallimg/twitter-xxl.png" height="50%" width="50%" /></a>
@@ -346,6 +360,7 @@
       </div>
     </div>
   </footer>
+
   <!-- /Site footer -->
 
   <div class="loader-wrapper">
@@ -371,38 +386,38 @@
 
   <script>
     if (window.screen.width > 600) {
-        $("#canvas").frameByFrame(
-          [
-            [0, 800],
-            [0, 72]
-          ],
-          {
-            canvasWidth: 2560,
-            canvasHeight: 1080,
-            canvasImagesPath: "images/backgrounds/bgframe/",
-            canvasImagesFormat: ".jpg",
-            frameCount: 72,
-            anchor: "#anchor"
-          }
-        );
+      $("#canvas").frameByFrame(
+        [
+          [0, 800],
+          [0, 72]
+        ],
+        {
+          canvasWidth: 2560,
+          canvasHeight: 1080,
+          canvasImagesPath: "images/backgrounds/bgframe/",
+          canvasImagesFormat: ".jpg",
+          frameCount: 72,
+          anchor: "#anchor"
+        }
+      );
     }
-  </script> 
+  </script>
   <script>
     if (window.screen.width > 600) {
       $("#canvas1").frameByFrame(
-          [
-            [0, 4200],
-            [0, 78]
-          ],
-          {
-            canvasWidth: 1920,
-            canvasHeight: 1080,
-            canvasImagesPath: "images/backgrounds/rmframes/",
-            canvasImagesFormat: ".jpg",
-            frameCount: 78,
-            anchor: "#anchor1"
-          }
-        );
+        [
+          [0, 4200],
+          [0, 78]
+        ],
+        {
+          canvasWidth: 1920,
+          canvasHeight: 1080,
+          canvasImagesPath: "images/backgrounds/rmframes/",
+          canvasImagesFormat: ".jpg",
+          frameCount: 78,
+          anchor: "#anchor1"
+        }
+      );
     }
   </script>
 
@@ -429,6 +444,7 @@
   </script>
 
   <script>
+
     var btn = $('#button');
 
     $(window).scroll(function () {
@@ -447,9 +463,12 @@
     $(document).ready(function () {
       $('#nav').onePageNav();
     });
+
   </script>
 
+  <!--Sectionlar arasi otomatik gecisi aktive etmek icin screen width degerini 600 yapin-->
   <script>
+
     if (window.screen.width > 99600) {
 
       var lastScrollTop = 0;
@@ -616,32 +635,6 @@
     });
   </script>
 
-  <script>
-    jQuery(document).ready(function ($) {
-      "use strict";
-      $('#customers-testimonials').owlCarousel({
-        loop: true,
-        center: true,
-        items: 3,
-        margin: 0,
-        autoplay: false,
-        dots: true,
-        autoplayTimeout: 8500,
-        smartSpeed: 450,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          }
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>
