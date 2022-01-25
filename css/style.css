@@ -143,10 +143,6 @@ h3,
   font-family: "Bebas Neue", sans-serif;
 }
 
-text {
-  position: relative;
-}
-
 @media screen and (min-width: 601px) {
   h3 {
     margin-top: -50px;
@@ -179,6 +175,8 @@ h6,
 
 text {
   font-family: "Bebas Neue", sans-serif;
+  position: relative;
+  letter-spacing: 5px;
 }
 
 .btn {
